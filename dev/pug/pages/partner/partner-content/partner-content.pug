@@ -1,0 +1,89 @@
+section.partner
+    .row.d-flex.justify-content-between
+        .col-sm-12.col-md-6.col-xl-6
+            .partner-about
+                h2.section-title Партнерская программа
+                p Партнерская программа совершенно бесплатна и позволяет участникам получать дополнительный доход путем размещения ссылок как на весь наш магазин «6 соток» — магазин товаров для сада и огорода в Пензе., так и на отдельные товары. Каждая покупка, совершенная по партнерской ссылке, приносит агентскую комиссию. Стандартный размер комиссии составляет 5%.
+                p За подробной информацией обращайтесь на страницу информации для партнеров
+            .partner-register
+                h4 Зарегистрироваться как партнер
+                p Обратите внимание, что эта учетная запись никак не связана с какой либо учетной записью покупателя!
+                a.all-buttons-green.partner-register-button(href="#partner-register--wrap") Заполнить анкету
+            form.partner-register--wrap#partner-register--wrap
+                .partner-register-person-data
+                    h3 Ваши персональные данные
+                    .partner-register-person-data--info
+                        label Ф. И. О.*
+                        input(type="text")
+                    .partner-register-person-data--info
+                        label Должность*
+                        input(type="text")
+                    .partner-register-person-data--info
+                        label Контактный телефон*
+                        input.mask-field(type="text" placeholder="+7 (000) 000-00-00")
+                    .partner-register-person-data--info-aggre
+                        input.product-area--rating-agree#agree-register-person(type="checkbox")
+                        label(for="agree-register-person") Я согласен с
+                            a(href="/") условиями
+                            span обработки персональных данных
+                .partner-register-person-data
+                    h3 Данные о компании
+                    .partner-register-person-data--info
+                        label Название организации
+                        input(type="text")
+                    .partner-register-person-data--info
+                        label Сайт
+                        input(type="text")
+                    .partner-register-person-data--info
+                        label Электронная почта*
+                        input.mask-field(type="email")
+                    .partner-register-person-data--info
+                        label Страна*
+                        select.partner-register-person-data--select.test
+                            option(value="Российская Федерация") Российская Федерация
+                            option(value="United States Kingdom") United States Kingdom
+                            option(value="Российская Федерация") Российская Федерация
+                            option(value="United States Kingdom") United States Kingdom
+                    .partner-register-person-data--info
+                        label Город*
+                        select.partner-register-person-data--select.test
+                            option(value="Москва") Москва
+                            option(value="Краснодар") Краснодар
+                            option(value="Владивосток") Владивосток
+                            option(value="Калининград") Калининград
+                .partner-register-person-data
+                    h3 Платежные реквизиты
+                    .partner-register-person-data--info
+                        label ИНН
+                        input(type="text")
+                    .partner-register-person-data--info
+                        label Способ оплаты
+                        input(type="text")
+                    .partner-register-person-data--info
+                        label Чек, Имя получателя платежа
+                        input.mask-field(type="text")
+                .partner-register-person-data
+                    h3 Пароль
+                    .partner-register-person-data--info
+                        label Логин*
+                        input(type="text")
+                    .partner-register-person-data--info
+                        label Пароль*
+                        input(type="text")
+                    .partner-register-person-data--info
+                        label Повторите пароль*
+                        input.mask-field(type="text")
+                    button.all-buttons-green(type="submit") Зарегистрироваться
+
+
+        .col-sm-12.col-md-5.col-xl-5.mr-xl-5.mt-5
+            h4 Я уже зарегистрирован как партнер
+            form.partner-login--wrap.col-xl-10.pt-4
+                .partner-register-person-data
+                    .partner-register-person-data--info
+                        label Партнерская электронная почта
+                        input(type="email")
+                    .partner-register-person-data--info
+                        label Пароль
+                        input(type="text")
+                    button.partner-login-button(type="submit") Войти

@@ -1,0 +1,207 @@
+.product-card
+  padding-bottom 60px
+.slider-product-card--item
+  position relative
+  border-radius: 30px 0px;
+.js-slider-product-card--wrap
+  position relative
+.product-card--wrap
+  display flex
+  justify-content space-between
+  width 90%
+.product-card--galery--wrap
+  width 38%
+  padding-top 50px
+.product-card--info
+  width 60%
+.product-card--info-parent
+  background: #EBFCE8;
+  border-radius: 30px 0px;
+  padding: 25px;
+.product-card--info .best-product--info--type-list
+  padding: 0
+.product-card--info .best-product--info--type-list__wrap .best-product--info--type-list
+  &:first-child
+    margin-right 80px
+.product-card--info .best-product--type--list-item-name
+  margin-right 15px
+.product-card--info .best-product--type--list-item-status
+  font-family "Circe Regular",sans-serif
+  font-size 14px
+.product-card--info .best-product--type--list-item
+  margin-bottom 25px
+.product-card--info--added-to-cart
+  display block
+  font-family "Circe Regular",sans-serif
+  margin-bottom 16px
+  &:hover
+    background-color #FF4141
+    color #fff
+    box-shadow: 2px 6px 10px rgba(255, 65, 65, 0.3);
+  &:active
+    box-shadow: inset 2px 6px 10px rgba(196,24,24,0.5);
+.product-card--info--buy-one-click
+  font-size 18px
+  height 48px
+  color #FF4141 !important
+  cursor pointer
+
+  &:hover
+    color #fff !important
+
+.slider-product-card--item--img
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+  border-radius 24px 0
+
+.js-product-gallery__nav
+  margin-top 30px
+
+.product-gallery-nav__item
+  margin-right 15px
+  background-color #EBFCE8
+  border-radius: 30px 0px;
+  padding 10px
+  cursor pointer
+
+.small--image
+  display: inline-block !important;
+  vertical-align: middle;
+  max-width: 100%;
+  height: auto;
+  width: auto;
+  border-radius 24px 0
+
+.modal-content
+  background: #EBFCE8;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  font-family "Circe Regular",sans-serif
+
+.modal-header
+  position relative
+  border-bottom none
+
+  .icon
+    size(18px)
+
+.modal-title
+  width 100%
+  font-family "Circe Bold",sans-serif
+  color #FF4141
+  text-align center
+
+.popup-modal-wrap
+  display: flex;
+  flex-direction: column;
+  padding: 0px 30px;
+  border-bottom  1.5px solid #5BDF78
+
+.popup-modal--input
+  background: #FFFFFF;
+  box-shadow: inset 1px 2px 10px rgba(46, 46, 46, 0.2);
+  border-radius: 24px;
+  border none
+  padding 12px
+  width 100%
+
+.popup-modal--input-agree
+  display flex
+  font-size 14px
+
+.popup-modal--agree
+  display none
+
+.popup-modal--agree + label
+  position relative
+  margin 0
+  padding 0
+  cursor pointer
+  display flex
+  justify-content center
+  align-items center
+  margin-bottom: 40px;
+
+.popup-modal--agree + label:before
+  content: '';
+  margin-right: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 20px;
+  height: 20px;
+  background: #FFFFFF;
+  box-shadow: inset 1px 2px 10px rgba(46, 46, 46, 0.2);
+  border-radius: 6px;
+
+.popup-modal--agree:checked + label:after
+  content: '';
+  position: absolute;
+  left: 5px;
+  top: 10px;
+  background: #5bdf78;
+  width: 2px;
+  height: 2px;
+  -webkit-box-shadow: -4px 0px 0 #5bdf78, 2px 0px 0 #5bdf78, -2px 0px 0 #5bdf78, 4px 0 0 #5bdf78, 4px -2px 0 #5bdf78, 4px -4px 0 #5bdf78, 4px -6px 0 #5bdf78, 4px -8px 0 #5bdf78, 4px -10px 0 #5bdf78;
+  box-shadow: -4px 0px 0 #5bdf78, 2px 0px 0 #5bdf78, -2px 0px 0 #5bdf78, 4px 0 0 #5bdf78, 4px -2px 0 #5bdf78, 4px -4px 0 #5bdf78, 4px -6px 0 #5bdf78, 4px -8px 0 #5bdf78, 4px -10px 0 #5bdf78;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg)
+
+.popup-modal--input-agree a
+  margin 0 5px
+
+.modal-footer
+  border-top none
+  display block
+
+.modal-footer .all-buttons-green
+  max-width 370px
+  margin: 25px 0;
+
+.submit-popup-form
+  display flex
+  justify-content center
+
+.popup-product-one-click--wrap
+  display inline-block
+
+.popup-product-one-click__img
+  max-width 160px
+  height auto
+  background-color #fff
+  border-radius 24px 0
+
+.popup-product-one-click--item
+  display flex
+  justify-content space-between
+  align-items center
+  margin-bottom 20px
+
+.popup-product-one-click--item__text
+  padding 20px
+  width 75%
+  font-family "Circe Regular",sans-serif
+
+.popup-product-one-click--item__summ
+  width 25%
+  font-size 22px
+  font-family "Circe Bold",sans-serif
+  text-align center
+
+.popup-product-span--wrap
+  width 100%
+  display flex
+  justify-content space-between
+  align-items center
+
+.modal-dialog
+  max-width  600px
+
+
+
+
+
+
+

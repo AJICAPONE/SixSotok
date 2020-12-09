@@ -1,0 +1,1164 @@
+section.catalog-section
+    h2.section-title Горшечные растения
+    .mobile-catalog-sort-and-filter
+        .mobile-catalog__filter Фильтры
+            .mobile-catalog__filter--clear
+                +icon('delete')
+        .mobile-catalog__sort Сортировка
+    .sort-products--wrap
+        .sort-product-sort
+            .sort-product--alphabet
+                span Сортировать:
+                form.sort-product--alphabet-form
+                    select.test2
+                        option(value="По алфавиту") По алфавиту
+                        option(value="Сначала дешевые") Сначала дешевые
+                        option(value="Сначала дорогие") Сначала дорогие
+                        option(value="По новизне") По новизне
+            .sort-product--squere
+                .sort-type--list.sort-view__item(data-catalog-view="list")
+                    span
+                    span
+                    span
+                .sort-type--nine__squere.sort-view__item.active(data-catalog-view="squere")
+                    +icon('nine-squere')
+        span.sort-atention Внимание! 
+            span Продажа горшечных цветов возможна только на условиях самовывоза из розничного магазина в г. Пенза: пр-т Строителей, 21а, ТЦ «Арбековский», отдел «6 соток»
+    .best-product-wrap
+        .best-product--container
+            .best-product--item
+                .best-product--item__link--wrap
+                    .best-product--item__attr
+                        span.best-product--item__hit.product-attr-status Хит
+                    a(data-fancybox="gallery" data-caption="Название" href="/static/img/general/bestseller/best-1-1.png").best-product--item__added-pic
+                        span.best-product--item__added-for-pic
+                            +icon('added-pic')
+                        img(src="/static/img/general/bestseller/best-1-1.png").best-product--item__img
+                    .shop-attr.best-product--shop-attr
+                        span.shop--compare.add-to-compare-catalog
+                            +icon('compare')
+                        span.shop--favourite.add-to-favourite-catalog
+                            +icon('star2')
+                            span.shop-favourite-add-to-favourite Добавить в избранное
+                .best-product--info
+                    a.best-product--info__link(href="/") Алоказия Полли 12 40
+                    span.best-product--info__in-stock В наличии
+                    .best-product--info__price-quantity
+                        span.best-product--info__price 300.00 &#8381
+                        .best-product--info__quantity
+                            button.sub(type="button") -
+                            input.best-quantity(value="1" min="1")
+                            button.add(type="button") +
+                    include ../../../../modules/buttons/best-add-to-cart
+                .best-product--info--type-list__wrapper
+                    .best-product--info--type-list__wrap
+                        .best-product--info--type-list
+                            a.best-product--info__type--list__link(href="/") Алоказия Полли 12 40
+                            ul.best-product--type--list-list
+                                li.best-product--type--list-item
+                                    span.best-product--type--list-item-name Наличие:
+                                    span.best-product--type--list-item-status Предзаказ
+                                li.best-product--type--list-item
+                                    span.best-product--type--list-item-name Ориентировочная дата поступления в продажу:
+                                    span.best-product--type--list-item-status 22.08.2019
+                                li.best-product--type--list-item
+                                    span.best-product--type--list-item-name Производитель:
+                                    span.best-product--type--list-item-status Голландия
+                                li.best-product--type--list-item
+                                    span.best-product--type--list-item-name Актикул:
+                                    span.best-product--type--list-item-status 00001218
+                                li.best-product--type--list-item
+                                    span.best-product--type--list-item-name Тип растения:
+                                    span.best-product--type--list-item-status кустарник, травянистое
+                        ul.best-product--info--type-list
+                            li.best-product--cart--compare-favourite.best-product--shop-attr.best-item-margin
+                                span.shop--compare.add-to-compare-catalog
+                                    +icon('compare')
+                                    span В сравнение
+                                span.shop--favourite.add-to-favourite-catalog
+                                    +icon('star2')
+                                    span В избранное
+                            li.best-product--cart--quantity.best-item-margin
+                                span Количество:
+                                .best-product--info__quantity
+                                    button.sub(type="button") -
+                                    input.best-quantity(value="1" min="1")
+                                    button.add(type="button") +
+                            li.best-product--cart--price.best-item-margin
+                                    span.best-product--cart--price---item Стоимость:
+                                    span.best-product--info__price 300.00 &#8381
+                            include ../../../../modules/buttons/best-add-to-cart
+
+            .best-product--item
+                .best-product--item__link--wrap
+                    .best-product--item__attr
+                        span.best-product--item__hit.product-attr-status Хит
+                        span.best-product--item__new.product-attr-status New
+                        span.best-product--item__discount.product-attr-status %
+                    a(data-fancybox="gallery" data-caption="Название" href="/static/img/general/bestseller/best-2-2.png").best-product--item__added-pic
+                        span.best-product--item__added-for-pic
+                            +icon('added-pic')
+                        img(src="/static/img/general/bestseller/best-2-2.png").best-product--item__img
+                    .shop-attr.best-product--shop-attr
+                        span.shop--compare.add-to-compare-catalog
+                            +icon('compare')
+                        span.shop--favourite.add-to-favourite-catalog
+                            +icon('star2')
+                            span.shop-favourite-add-to-favourite Добавить в избранное
+                .best-product--info
+                    a.best-product--info__link(href="/") Антуриум Андре Микс 12 37
+                    span.best-product--info__in-stock В наличии
+                    .best-product--info__price-quantity
+                        span.best-product--info__price 590.00 &#8381
+                        .best-product--info__quantity
+                            button.sub(type="button") -
+                            input.best-quantity(value="1" min="1")
+                            button.add(type="button") +
+                    include ../../../../modules/buttons/best-add-to-cart
+                .best-product--info--type-list__wrapper
+                    .best-product--info--type-list__wrap
+                        .best-product--info--type-list
+                            a.best-product--info__type--list__link(href="/") Алоказия Полли 12 40
+                            ul.best-product--type--list-list
+                                li.best-product--type--list-item
+                                    span.best-product--type--list-item-name Наличие:
+                                    span.best-product--type--list-item-status Предзаказ
+                                li.best-product--type--list-item
+                                    span.best-product--type--list-item-name Ориентировочная дата поступления в продажу:
+                                    span.best-product--type--list-item-status 22.08.2019
+                                li.best-product--type--list-item
+                                    span.best-product--type--list-item-name Производитель:
+                                    span.best-product--type--list-item-status Голландия
+                                li.best-product--type--list-item
+                                    span.best-product--type--list-item-name Актикул:
+                                    span.best-product--type--list-item-status 00001218
+                                li.best-product--type--list-item
+                                    span.best-product--type--list-item-name Тип растения:
+                                    span.best-product--type--list-item-status кустарник, травянистое
+                        ul.best-product--info--type-list
+                            li.best-product--cart--compare-favourite.best-product--shop-attr.best-item-margin
+                                span.shop--compare.add-to-compare-catalog
+                                    +icon('compare')
+                                    span В сравнение
+                                span.shop--favourite.add-to-favourite-catalog
+                                    +icon('star2')
+                                    span В избранное
+                            li.best-product--cart--quantity.best-item-margin
+                                span Количество:
+                                .best-product--info__quantity
+                                    button.sub(type="button") -
+                                    input.best-quantity(value="1" min="1")
+                                    button.add(type="button") +
+                            li.best-product--cart--price.best-item-margin
+                                span.best-product--cart--price---item Стоимость:
+                                span.best-product--info__price 300.00 &#8381
+                            include ../../../../modules/buttons/best-add-to-cart
+
+            .best-product--item
+                .best-product--item__link--wrap
+                    .best-product--item__attr
+                        span.best-product--item__hit.product-attr-status Хит
+                    a(data-fancybox="gallery" data-caption="Название" href="/static/img/general/bestseller/best-3-3.png").best-product--item__added-pic
+                        span.best-product--item__added-for-pic
+                            +icon('added-pic')
+                        img(src="/static/img/general/bestseller/best-3-3.png").best-product--item__img
+                    .shop-attr.best-product--shop-attr
+                        span.shop--compare.add-to-compare-catalog
+                            +icon('compare')
+                        span.shop--favourite.add-to-favourite-catalog
+                            +icon('star2')
+                            span.shop-favourite-add-to-favourite Добавить в избранное
+                .best-product--info
+                    a.best-product--info__link(href="/") Аспарагус Микс 12 35
+                    span.best-product--info__in-stock.preorder-best-product Предзаказ
+                    .best-product--info__price-quantity
+                        span.best-product--info__price 230.00 &#8381
+                        .best-product--info__quantity
+                            button.sub(type="button") -
+                            input.best-quantity(value="1" min="1")
+                            button.add(type="button") +
+                    include ../../../../modules/buttons/best-add-to-cart
+                .best-product--info--type-list__wrapper
+                    .best-product--info--type-list__wrap
+                        .best-product--info--type-list
+                            a.best-product--info__type--list__link(href="/") Алоказия Полли 12 40
+                            ul.best-product--type--list-list
+                                li.best-product--type--list-item
+                                    span.best-product--type--list-item-name Наличие:
+                                    span.best-product--type--list-item-status Предзаказ
+                                li.best-product--type--list-item
+                                    span.best-product--type--list-item-name Ориентировочная дата поступления в продажу:
+                                    span.best-product--type--list-item-status 22.08.2019
+                                li.best-product--type--list-item
+                                    span.best-product--type--list-item-name Производитель:
+                                    span.best-product--type--list-item-status Голландия
+                                li.best-product--type--list-item
+                                    span.best-product--type--list-item-name Актикул:
+                                    span.best-product--type--list-item-status 00001218
+                                li.best-product--type--list-item
+                                    span.best-product--type--list-item-name Тип растения:
+                                    span.best-product--type--list-item-status кустарник, травянистое
+                        ul.best-product--info--type-list
+                            li.best-product--cart--compare-favourite.best-product--shop-attr.best-item-margin
+                                span.shop--compare.add-to-compare-catalog
+                                    +icon('compare')
+                                    span В сравнение
+                                span.shop--favourite.add-to-favourite-catalog
+                                    +icon('star2')
+                                    span В избранное
+                            li.best-product--cart--quantity.best-item-margin
+                                span Количество:
+                                .best-product--info__quantity
+                                    button.sub(type="button") -
+                                    input.best-quantity(value="1" min="1")
+                                    button.add(type="button") +
+                            li.best-product--cart--price.best-item-margin
+                                span.best-product--cart--price---item Стоимость:
+                                span.best-product--info__price 300.00 &#8381
+                            include ../../../../modules/buttons/best-add-to-cart
+
+            .best-product--item
+                .best-product--item__link--wrap
+                    .best-product--item__attr
+                        span.best-product--item__hit.product-attr-status Хит
+                    a(data-fancybox="gallery" data-caption="Название" href="/static/img/general/bestseller/best-4-4.png").best-product--item__added-pic
+                        span.best-product--item__added-for-pic
+                            +icon('added-pic')
+                        img(src="/static/img/general/bestseller/best-4-4.png").best-product--item__img
+                    .shop-attr.best-product--shop-attr
+                        span.shop--compare.add-to-compare-catalog
+                            +icon('compare')
+                        span.shop--favourite.add-to-favourite-catalog
+                            +icon('star2')
+                            span.shop-favourite-add-to-favourite Добавить в избранное
+                .best-product--info
+                    a.best-product--info__link(href="/") Аспидистра 15 60
+                    span.best-product--info__in-stock В наличии
+                    .best-product--info__price-quantity
+                        span.best-product--info__price 300.00 &#8381
+                        .best-product--info__quantity
+                            button.sub(type="button") -
+                            input.best-quantity(value="1" min="1")
+                            button.add(type="button") +
+                    include ../../../../modules/buttons/best-add-to-cart
+                .best-product--info--type-list__wrapper
+                    .best-product--info--type-list__wrap
+                        .best-product--info--type-list
+                            a.best-product--info__type--list__link(href="/") Алоказия Полли 12 40
+                            ul.best-product--type--list-list
+                                li.best-product--type--list-item
+                                    span.best-product--type--list-item-name Наличие:
+                                    span.best-product--type--list-item-status Предзаказ
+                                li.best-product--type--list-item
+                                    span.best-product--type--list-item-name Ориентировочная дата поступления в продажу:
+                                    span.best-product--type--list-item-status 22.08.2019
+                                li.best-product--type--list-item
+                                    span.best-product--type--list-item-name Производитель:
+                                    span.best-product--type--list-item-status Голландия
+                                li.best-product--type--list-item
+                                    span.best-product--type--list-item-name Актикул:
+                                    span.best-product--type--list-item-status 00001218
+                                li.best-product--type--list-item
+                                    span.best-product--type--list-item-name Тип растения:
+                                    span.best-product--type--list-item-status кустарник, травянистое
+                        ul.best-product--info--type-list
+                            li.best-product--cart--compare-favourite.best-product--shop-attr.best-item-margin
+                                span.shop--compare.add-to-compare-catalog
+                                    +icon('compare')
+                                    span В сравнение
+                                span.shop--favourite.add-to-favourite-catalog
+                                    +icon('star2')
+                                    span В избранное
+                            li.best-product--cart--quantity.best-item-margin
+                                span Количество:
+                                .best-product--info__quantity
+                                    button.sub(type="button") -
+                                    input.best-quantity(value="1" min="1")
+                                    button.add(type="button") +
+                            li.best-product--cart--price.best-item-margin
+                                span.best-product--cart--price---item Стоимость:
+                                span.best-product--info__price 300.00 &#8381
+                            include ../../../../modules/buttons/best-add-to-cart
+
+            .best-product--item
+                .best-product--item__link--wrap
+                    .best-product--item__attr
+                        span.best-product--item__hit.product-attr-status Хит
+                    a(data-fancybox="gallery" data-caption="Название" href="/static/img/general/bestseller/best-5-5.png").best-product--item__added-pic
+                        span.best-product--item__added-for-pic
+                            +icon('added-pic')
+                        img(src="/static/img/general/bestseller/best-5-5.png").best-product--item__img
+                    .shop-attr.best-product--shop-attr
+                        span.shop--compare.add-to-compare-catalog
+                            +icon('compare')
+                        span.shop--favourite.add-to-favourite-catalog
+                            +icon('star2')
+                            span.shop-favourite-add-to-favourite Добавить в избранное
+                .best-product--info
+                    a.best-product--info__link(href="/") Бегония Элатиор 11
+                    span.best-product--info__in-stock В наличии
+                    .best-product--info__price-quantity
+                        span.best-product--info__price 590.00 &#8381
+                        .best-product--info__quantity
+                            button.sub(type="button") -
+                            input.best-quantity(value="1" min="1")
+                            button.add(type="button") +
+                    include ../../../../modules/buttons/best-add-to-cart
+                .best-product--info--type-list__wrapper
+                    .best-product--info--type-list__wrap
+                        .best-product--info--type-list
+                            a.best-product--info__type--list__link(href="/") Алоказия Полли 12 40
+                            ul.best-product--type--list-list
+                                li.best-product--type--list-item
+                                    span.best-product--type--list-item-name Наличие:
+                                    span.best-product--type--list-item-status Предзаказ
+                                li.best-product--type--list-item
+                                    span.best-product--type--list-item-name Ориентировочная дата поступления в продажу:
+                                    span.best-product--type--list-item-status 22.08.2019
+                                li.best-product--type--list-item
+                                    span.best-product--type--list-item-name Производитель:
+                                    span.best-product--type--list-item-status Голландия
+                                li.best-product--type--list-item
+                                    span.best-product--type--list-item-name Актикул:
+                                    span.best-product--type--list-item-status 00001218
+                                li.best-product--type--list-item
+                                    span.best-product--type--list-item-name Тип растения:
+                                    span.best-product--type--list-item-status кустарник, травянистое
+                        ul.best-product--info--type-list
+                            li.best-product--cart--compare-favourite.best-product--shop-attr.best-item-margin
+                                span.shop--compare.add-to-compare-catalog
+                                    +icon('compare')
+                                    span В сравнение
+                                span.shop--favourite.add-to-favourite-catalog
+                                    +icon('star2')
+                                    span В избранное
+                            li.best-product--cart--quantity.best-item-margin
+                                span Количество:
+                                .best-product--info__quantity
+                                    button.sub(type="button") -
+                                    input.best-quantity(value="1" min="1")
+                                    button.add(type="button") +
+                            li.best-product--cart--price.best-item-margin
+                                span.best-product--cart--price---item Стоимость:
+                                span.best-product--info__price 300.00 &#8381
+                            include ../../../../modules/buttons/best-add-to-cart
+
+            .best-product--item
+                .best-product--item__link--wrap
+                    .best-product--item__attr
+                        span.best-product--item__hit.product-attr-status Хит
+                    a(data-fancybox="gallery" data-caption="Название" href="/static/img/general/bestseller/best-6-6.png").best-product--item__added-pic
+                        span.best-product--item__added-for-pic
+                            +icon('added-pic')
+                        img(src="/static/img/general/bestseller/best-6-6.png").best-product--item__img
+                    .shop-attr.best-product--shop-attr
+                        span.shop--compare.add-to-compare-catalog
+                            +icon('compare')
+                        span.shop--favourite.add-to-favourite-catalog
+                            +icon('star2')
+                            span.shop-favourite-add-to-favourite Добавить в избранное
+                .best-product--info
+                    a.best-product--info__link(href="/") Бегония Элатиор 15
+                    span.best-product--info__in-stock В наличии
+                    .best-product--info__price-quantity
+                        span.best-product--info__price 230.00 &#8381
+                        .best-product--info__quantity
+                            button.sub(type="button") -
+                            input.best-quantity(value="1" min="1")
+                            button.add(type="button") +
+                    include ../../../../modules/buttons/best-add-to-cart
+                .best-product--info--type-list__wrapper
+                    .best-product--info--type-list__wrap
+                        .best-product--info--type-list
+                            a.best-product--info__type--list__link(href="/") Алоказия Полли 12 40
+                            ul.best-product--type--list-list
+                                li.best-product--type--list-item
+                                    span.best-product--type--list-item-name Наличие:
+                                    span.best-product--type--list-item-status Предзаказ
+                                li.best-product--type--list-item
+                                    span.best-product--type--list-item-name Ориентировочная дата поступления в продажу:
+                                    span.best-product--type--list-item-status 22.08.2019
+                                li.best-product--type--list-item
+                                    span.best-product--type--list-item-name Производитель:
+                                    span.best-product--type--list-item-status Голландия
+                                li.best-product--type--list-item
+                                    span.best-product--type--list-item-name Актикул:
+                                    span.best-product--type--list-item-status 00001218
+                                li.best-product--type--list-item
+                                    span.best-product--type--list-item-name Тип растения:
+                                    span.best-product--type--list-item-status кустарник, травянистое
+                        ul.best-product--info--type-list
+                            li.best-product--cart--compare-favourite.best-product--shop-attr.best-item-margin
+                                span.shop--compare.add-to-compare-catalog
+                                    +icon('compare')
+                                    span В сравнение
+                                span.shop--favourite.add-to-favourite-catalog
+                                    +icon('star2')
+                                    span В избранное
+                            li.best-product--cart--quantity.best-item-margin
+                                span Количество:
+                                .best-product--info__quantity
+                                    button.sub(type="button") -
+                                    input.best-quantity(value="1" min="1")
+                                    button.add(type="button") +
+                            li.best-product--cart--price.best-item-margin
+                                span.best-product--cart--price---item Стоимость:
+                                span.best-product--info__price 300.00 &#8381
+                            include ../../../../modules/buttons/best-add-to-cart
+
+            .best-product--item
+                .best-product--item__link--wrap
+                    .best-product--item__attr
+                        span.best-product--item__hit.product-attr-status Хит
+                    a(data-fancybox="gallery" data-caption="Название" href="/static/img/general/bestseller/best-6-6.png").best-product--item__added-pic
+                        span.best-product--item__added-for-pic
+                            +icon('added-pic')
+                        img(src="/static/img/general/bestseller/best-6-6.png").best-product--item__img
+                    .shop-attr.best-product--shop-attr
+                        span.shop--compare.add-to-compare-catalog
+                            +icon('compare')
+                        span.shop--favourite.add-to-favourite-catalog
+                            +icon('star2')
+                            span.shop-favourite-add-to-favourite Добавить в избранное
+                .best-product--info
+                    a.best-product--info__link(href="/") Бегония Элатиор 15
+                    span.best-product--info__in-stock В наличии
+                    .best-product--info__price-quantity
+                        span.best-product--info__price 230.00 &#8381
+                        .best-product--info__quantity
+                            button.sub(type="button") -
+                            input.best-quantity(value="1" min="1")
+                            button.add(type="button") +
+                    include ../../../../modules/buttons/best-add-to-cart
+                .best-product--info--type-list__wrapper
+                    .best-product--info--type-list__wrap
+                        .best-product--info--type-list
+                            a.best-product--info__type--list__link(href="/") Алоказия Полли 12 40
+                            ul.best-product--type--list-list
+                                li.best-product--type--list-item
+                                    span.best-product--type--list-item-name Наличие:
+                                    span.best-product--type--list-item-status Предзаказ
+                                li.best-product--type--list-item
+                                    span.best-product--type--list-item-name Ориентировочная дата поступления в продажу:
+                                    span.best-product--type--list-item-status 22.08.2019
+                                li.best-product--type--list-item
+                                    span.best-product--type--list-item-name Производитель:
+                                    span.best-product--type--list-item-status Голландия
+                                li.best-product--type--list-item
+                                    span.best-product--type--list-item-name Актикул:
+                                    span.best-product--type--list-item-status 00001218
+                                li.best-product--type--list-item
+                                    span.best-product--type--list-item-name Тип растения:
+                                    span.best-product--type--list-item-status кустарник, травянистое
+                        ul.best-product--info--type-list
+                            li.best-product--cart--compare-favourite.best-product--shop-attr.best-item-margin
+                                span.shop--compare.add-to-compare-catalog
+                                    +icon('compare')
+                                    span В сравнение
+                                span.shop--favourite.add-to-favourite-catalog
+                                    +icon('star2')
+                                    span В избранное
+                            li.best-product--cart--quantity.best-item-margin
+                                span Количество:
+                                .best-product--info__quantity
+                                    button.sub(type="button") -
+                                    input.best-quantity(value="1" min="1")
+                                    button.add(type="button") +
+                            li.best-product--cart--price.best-item-margin
+                                span.best-product--cart--price---item Стоимость:
+                                span.best-product--info__price 300.00 &#8381
+                            include ../../../../modules/buttons/best-add-to-cart
+
+            .best-product--item
+                .best-product--item__link--wrap
+                    .best-product--item__attr
+                        span.best-product--item__hit.product-attr-status Хит
+                    a(data-fancybox="gallery" data-caption="Название" href="/static/img/general/bestseller/best-5-5.png").best-product--item__added-pic
+                        span.best-product--item__added-for-pic
+                            +icon('added-pic')
+                        img(src="/static/img/general/bestseller/best-5-5.png").best-product--item__img
+                    .shop-attr.best-product--shop-attr
+                        span.shop--compare.add-to-compare-catalog
+                            +icon('compare')
+                        span.shop--favourite.add-to-favourite-catalog
+                            +icon('star2')
+                            span.shop-favourite-add-to-favourite Добавить в избранное
+                .best-product--info
+                    a.best-product--info__link(href="/") Бегония Элатиор 11
+                    span.best-product--info__in-stock В наличии
+                    .best-product--info__price-quantity
+                        span.best-product--info__price 590.00 &#8381
+                        .best-product--info__quantity
+                            button.sub(type="button") -
+                            input.best-quantity(value="1" min="1")
+                            button.add(type="button") +
+                    include ../../../../modules/buttons/best-add-to-cart
+                .best-product--info--type-list__wrapper
+                    .best-product--info--type-list__wrap
+                        .best-product--info--type-list
+                            a.best-product--info__type--list__link(href="/") Алоказия Полли 12 40
+                            ul.best-product--type--list-list
+                                li.best-product--type--list-item
+                                    span.best-product--type--list-item-name Наличие:
+                                    span.best-product--type--list-item-status Предзаказ
+                                li.best-product--type--list-item
+                                    span.best-product--type--list-item-name Ориентировочная дата поступления в продажу:
+                                    span.best-product--type--list-item-status 22.08.2019
+                                li.best-product--type--list-item
+                                    span.best-product--type--list-item-name Производитель:
+                                    span.best-product--type--list-item-status Голландия
+                                li.best-product--type--list-item
+                                    span.best-product--type--list-item-name Актикул:
+                                    span.best-product--type--list-item-status 00001218
+                                li.best-product--type--list-item
+                                    span.best-product--type--list-item-name Тип растения:
+                                    span.best-product--type--list-item-status кустарник, травянистое
+                        ul.best-product--info--type-list
+                            li.best-product--cart--compare-favourite.best-product--shop-attr.best-item-margin
+                                span.shop--compare.add-to-compare-catalog
+                                    +icon('compare')
+                                    span В сравнение
+                                span.shop--favourite.add-to-favourite-catalog
+                                    +icon('star2')
+                                    span В избранное
+                            li.best-product--cart--quantity.best-item-margin
+                                span Количество:
+                                .best-product--info__quantity
+                                    button.sub(type="button") -
+                                    input.best-quantity(value="1" min="1")
+                                    button.add(type="button") +
+                            li.best-product--cart--price.best-item-margin
+                                span.best-product--cart--price---item Стоимость:
+                                span.best-product--info__price 300.00 &#8381
+                            include ../../../../modules/buttons/best-add-to-cart
+
+            .best-product--item
+                .best-product--item__link--wrap
+                    .best-product--item__attr
+                        span.best-product--item__hit.product-attr-status Хит
+                    a(data-fancybox="gallery" data-caption="Название" href="/static/img/general/bestseller/best-6-6.png").best-product--item__added-pic
+                        span.best-product--item__added-for-pic
+                            +icon('added-pic')
+                        img(src="/static/img/general/bestseller/best-6-6.png").best-product--item__img
+                    .shop-attr.best-product--shop-attr
+                        span.shop--compare.add-to-compare-catalog
+                            +icon('compare')
+                        span.shop--favourite.add-to-favourite-catalog
+                            +icon('star2')
+                            span.shop-favourite-add-to-favourite Добавить в избранное
+                .best-product--info
+                    a.best-product--info__link(href="/") Бегония Элатиор 15
+                    span.best-product--info__in-stock В наличии
+                    .best-product--info__price-quantity
+                        span.best-product--info__price 230.00 &#8381
+                        .best-product--info__quantity
+                            button.sub(type="button") -
+                            input.best-quantity(value="1" min="1")
+                            button.add(type="button") +
+                    include ../../../../modules/buttons/best-add-to-cart
+                .best-product--info--type-list__wrapper
+                    .best-product--info--type-list__wrap
+                        .best-product--info--type-list
+                            a.best-product--info__type--list__link(href="/") Алоказия Полли 12 40
+                            ul.best-product--type--list-list
+                                li.best-product--type--list-item
+                                    span.best-product--type--list-item-name Наличие:
+                                    span.best-product--type--list-item-status Предзаказ
+                                li.best-product--type--list-item
+                                    span.best-product--type--list-item-name Ориентировочная дата поступления в продажу:
+                                    span.best-product--type--list-item-status 22.08.2019
+                                li.best-product--type--list-item
+                                    span.best-product--type--list-item-name Производитель:
+                                    span.best-product--type--list-item-status Голландия
+                                li.best-product--type--list-item
+                                    span.best-product--type--list-item-name Актикул:
+                                    span.best-product--type--list-item-status 00001218
+                                li.best-product--type--list-item
+                                    span.best-product--type--list-item-name Тип растения:
+                                    span.best-product--type--list-item-status кустарник, травянистое
+                        ul.best-product--info--type-list
+                            li.best-product--cart--compare-favourite.best-product--shop-attr.best-item-margin
+                                span.shop--compare.add-to-compare-catalog
+                                    +icon('compare')
+                                    span В сравнение
+                                span.shop--favourite.add-to-favourite-catalog
+                                    +icon('star2')
+                                    span В избранное
+                            li.best-product--cart--quantity.best-item-margin
+                                span Количество:
+                                .best-product--info__quantity
+                                    button.sub(type="button") -
+                                    input.best-quantity(value="1" min="1")
+                                    button.add(type="button") +
+                            li.best-product--cart--price.best-item-margin
+                                span.best-product--cart--price---item Стоимость:
+                                span.best-product--info__price 300.00 &#8381
+                            include ../../../../modules/buttons/best-add-to-cart
+
+            .best-product--item
+                .best-product--item__link--wrap
+                    .best-product--item__attr
+                        span.best-product--item__hit.product-attr-status Хит
+                    a(data-fancybox="gallery" data-caption="Название" href="/static/img/general/bestseller/best-6-6.png").best-product--item__added-pic
+                        span.best-product--item__added-for-pic
+                            +icon('added-pic')
+                        img(src="/static/img/general/bestseller/best-6-6.png").best-product--item__img
+                    .shop-attr.best-product--shop-attr
+                        span.shop--compare.add-to-compare-catalog
+                            +icon('compare')
+                        span.shop--favourite.add-to-favourite-catalog
+                            +icon('star2')
+                            span.shop-favourite-add-to-favourite Добавить в избранное
+                .best-product--info
+                    a.best-product--info__link(href="/") Бегония Элатиор 15
+                    span.best-product--info__in-stock В наличии
+                    .best-product--info__price-quantity
+                        span.best-product--info__price 230.00 &#8381
+                        .best-product--info__quantity
+                            button.sub(type="button") -
+                            input.best-quantity(value="1" min="1")
+                            button.add(type="button") +
+                    include ../../../../modules/buttons/best-add-to-cart
+                .best-product--info--type-list__wrapper
+                    .best-product--info--type-list__wrap
+                        .best-product--info--type-list
+                            a.best-product--info__type--list__link(href="/") Алоказия Полли 12 40
+                            ul.best-product--type--list-list
+                                li.best-product--type--list-item
+                                    span.best-product--type--list-item-name Наличие:
+                                    span.best-product--type--list-item-status Предзаказ
+                                li.best-product--type--list-item
+                                    span.best-product--type--list-item-name Ориентировочная дата поступления в продажу:
+                                    span.best-product--type--list-item-status 22.08.2019
+                                li.best-product--type--list-item
+                                    span.best-product--type--list-item-name Производитель:
+                                    span.best-product--type--list-item-status Голландия
+                                li.best-product--type--list-item
+                                    span.best-product--type--list-item-name Актикул:
+                                    span.best-product--type--list-item-status 00001218
+                                li.best-product--type--list-item
+                                    span.best-product--type--list-item-name Тип растения:
+                                    span.best-product--type--list-item-status кустарник, травянистое
+                        ul.best-product--info--type-list
+                            li.best-product--cart--compare-favourite.best-product--shop-attr.best-item-margin
+                                span.shop--compare.add-to-compare-catalog
+                                    +icon('compare')
+                                    span В сравнение
+                                span.shop--favourite.add-to-favourite-catalog
+                                    +icon('star2')
+                                    span В избранное
+                            li.best-product--cart--quantity.best-item-margin
+                                span Количество:
+                                .best-product--info__quantity
+                                    button.sub(type="button") -
+                                    input.best-quantity(value="1" min="1")
+                                    button.add(type="button") +
+                            li.best-product--cart--price.best-item-margin
+                                span.best-product--cart--price---item Стоимость:
+                                span.best-product--info__price 300.00 &#8381
+                            include ../../../../modules/buttons/best-add-to-cart
+
+            .best-product--item
+                .best-product--item__link--wrap
+                    .best-product--item__attr
+                        span.best-product--item__hit.product-attr-status Хит
+                    a(data-fancybox="gallery" data-caption="Название" href="/static/img/general/bestseller/best-5-5.png").best-product--item__added-pic
+                        span.best-product--item__added-for-pic
+                            +icon('added-pic')
+                        img(src="/static/img/general/bestseller/best-5-5.png").best-product--item__img
+                    .shop-attr.best-product--shop-attr
+                        span.shop--compare.add-to-compare-catalog
+                            +icon('compare')
+                        span.shop--favourite.add-to-favourite-catalog
+                            +icon('star2')
+                            span.shop-favourite-add-to-favourite Добавить в избранное
+                .best-product--info
+                    a.best-product--info__link(href="/") Бегония Элатиор 11
+                    span.best-product--info__in-stock В наличии
+                    .best-product--info__price-quantity
+                        span.best-product--info__price 590.00 &#8381
+                        .best-product--info__quantity
+                            button.sub(type="button") -
+                            input.best-quantity(value="1" min="1")
+                            button.add(type="button") +
+                    include ../../../../modules/buttons/best-add-to-cart
+                .best-product--info--type-list__wrapper
+                    .best-product--info--type-list__wrap
+                        .best-product--info--type-list
+                            a.best-product--info__type--list__link(href="/") Алоказия Полли 12 40
+                            ul.best-product--type--list-list
+                                li.best-product--type--list-item
+                                    span.best-product--type--list-item-name Наличие:
+                                    span.best-product--type--list-item-status Предзаказ
+                                li.best-product--type--list-item
+                                    span.best-product--type--list-item-name Ориентировочная дата поступления в продажу:
+                                    span.best-product--type--list-item-status 22.08.2019
+                                li.best-product--type--list-item
+                                    span.best-product--type--list-item-name Производитель:
+                                    span.best-product--type--list-item-status Голландия
+                                li.best-product--type--list-item
+                                    span.best-product--type--list-item-name Актикул:
+                                    span.best-product--type--list-item-status 00001218
+                                li.best-product--type--list-item
+                                    span.best-product--type--list-item-name Тип растения:
+                                    span.best-product--type--list-item-status кустарник, травянистое
+                        ul.best-product--info--type-list
+                            li.best-product--cart--compare-favourite.best-product--shop-attr.best-item-margin
+                                span.shop--compare.add-to-compare-catalog
+                                    +icon('compare')
+                                    span В сравнение
+                                span.shop--favourite.add-to-favourite-catalog
+                                    +icon('star2')
+                                    span В избранное
+                            li.best-product--cart--quantity.best-item-margin
+                                span Количество:
+                                .best-product--info__quantity
+                                    button.sub(type="button") -
+                                    input.best-quantity(value="1" min="1")
+                                    button.add(type="button") +
+                            li.best-product--cart--price.best-item-margin
+                                span.best-product--cart--price---item Стоимость:
+                                span.best-product--info__price 300.00 &#8381
+                            include ../../../../modules/buttons/best-add-to-cart
+
+            .best-product--item
+                .best-product--item__link--wrap
+                    .best-product--item__attr
+                        span.best-product--item__hit.product-attr-status Хит
+                    a(data-fancybox="gallery" data-caption="Название" href="/static/img/general/bestseller/best-6-6.png").best-product--item__added-pic
+                        span.best-product--item__added-for-pic
+                            +icon('added-pic')
+                        img(src="/static/img/general/bestseller/best-6-6.png").best-product--item__img
+                    .shop-attr.best-product--shop-attr
+                        span.shop--compare.add-to-compare-catalog
+                            +icon('compare')
+                        span.shop--favourite.add-to-favourite-catalog
+                            +icon('star2')
+                            span.shop-favourite-add-to-favourite Добавить в избранное
+                .best-product--info
+                    a.best-product--info__link(href="/") Бегония Элатиор 15
+                    span.best-product--info__in-stock В наличии
+                    .best-product--info__price-quantity
+                        span.best-product--info__price 230.00 &#8381
+                        .best-product--info__quantity
+                            button.sub(type="button") -
+                            input.best-quantity(value="1" min="1")
+                            button.add(type="button") +
+                    include ../../../../modules/buttons/best-add-to-cart
+                .best-product--info--type-list__wrapper
+                    .best-product--info--type-list__wrap
+                        .best-product--info--type-list
+                            a.best-product--info__type--list__link(href="/") Алоказия Полли 12 40
+                            ul.best-product--type--list-list
+                                li.best-product--type--list-item
+                                    span.best-product--type--list-item-name Наличие:
+                                    span.best-product--type--list-item-status Предзаказ
+                                li.best-product--type--list-item
+                                    span.best-product--type--list-item-name Ориентировочная дата поступления в продажу:
+                                    span.best-product--type--list-item-status 22.08.2019
+                                li.best-product--type--list-item
+                                    span.best-product--type--list-item-name Производитель:
+                                    span.best-product--type--list-item-status Голландия
+                                li.best-product--type--list-item
+                                    span.best-product--type--list-item-name Актикул:
+                                    span.best-product--type--list-item-status 00001218
+                                li.best-product--type--list-item
+                                    span.best-product--type--list-item-name Тип растения:
+                                    span.best-product--type--list-item-status кустарник, травянистое
+                        ul.best-product--info--type-list
+                            li.best-product--cart--compare-favourite.best-product--shop-attr.best-item-margin
+                                span.shop--compare.add-to-compare-catalog
+                                    +icon('compare')
+                                    span В сравнение
+                                span.shop--favourite.add-to-favourite-catalog
+                                    +icon('star2')
+                                    span В избранное
+                            li.best-product--cart--quantity.best-item-margin
+                                span Количество:
+                                .best-product--info__quantity
+                                    button.sub(type="button") -
+                                    input.best-quantity(value="1" min="1")
+                                    button.add(type="button") +
+                            li.best-product--cart--price.best-item-margin
+                                span.best-product--cart--price---item Стоимость:
+                                span.best-product--info__price 300.00 &#8381
+                            include ../../../../modules/buttons/best-add-to-cart
+
+            .best-product--item
+                .best-product--item__link--wrap
+                    .best-product--item__attr
+                        span.best-product--item__hit.product-attr-status Хит
+                    a(data-fancybox="gallery" data-caption="Название" href="/static/img/general/bestseller/best-6-6.png").best-product--item__added-pic
+                        span.best-product--item__added-for-pic
+                            +icon('added-pic')
+                        img(src="/static/img/general/bestseller/best-6-6.png").best-product--item__img
+                    .shop-attr.best-product--shop-attr
+                        span.shop--compare.add-to-compare-catalog
+                            +icon('compare')
+                        span.shop--favourite.add-to-favourite-catalog
+                            +icon('star2')
+                            span.shop-favourite-add-to-favourite Добавить в избранное
+                .best-product--info
+                    a.best-product--info__link(href="/") Бегония Элатиор 15
+                    span.best-product--info__in-stock В наличии
+                    .best-product--info__price-quantity
+                        span.best-product--info__price 230.00 &#8381
+                        .best-product--info__quantity
+                            button.sub(type="button") -
+                            input.best-quantity(value="1" min="1")
+                            button.add(type="button") +
+                    include ../../../../modules/buttons/best-add-to-cart
+                .best-product--info--type-list__wrapper
+                    .best-product--info--type-list__wrap
+                        .best-product--info--type-list
+                            a.best-product--info__type--list__link(href="/") Алоказия Полли 12 40
+                            ul.best-product--type--list-list
+                                li.best-product--type--list-item
+                                    span.best-product--type--list-item-name Наличие:
+                                    span.best-product--type--list-item-status Предзаказ
+                                li.best-product--type--list-item
+                                    span.best-product--type--list-item-name Ориентировочная дата поступления в продажу:
+                                    span.best-product--type--list-item-status 22.08.2019
+                                li.best-product--type--list-item
+                                    span.best-product--type--list-item-name Производитель:
+                                    span.best-product--type--list-item-status Голландия
+                                li.best-product--type--list-item
+                                    span.best-product--type--list-item-name Актикул:
+                                    span.best-product--type--list-item-status 00001218
+                                li.best-product--type--list-item
+                                    span.best-product--type--list-item-name Тип растения:
+                                    span.best-product--type--list-item-status кустарник, травянистое
+                        ul.best-product--info--type-list
+                            li.best-product--cart--compare-favourite.best-product--shop-attr.best-item-margin
+                                span.shop--compare.add-to-compare-catalog
+                                    +icon('compare')
+                                    span В сравнение
+                                span.shop--favourite.add-to-favourite-catalog
+                                    +icon('star2')
+                                    span В избранное
+                            li.best-product--cart--quantity.best-item-margin
+                                span Количество:
+                                .best-product--info__quantity
+                                    button.sub(type="button") -
+                                    input.best-quantity(value="1" min="1")
+                                    button.add(type="button") +
+                            li.best-product--cart--price.best-item-margin
+                                span.best-product--cart--price---item Стоимость:
+                                span.best-product--info__price 300.00 &#8381
+                            include ../../../../modules/buttons/best-add-to-cart
+
+            .best-product--item
+                .best-product--item__link--wrap
+                    .best-product--item__attr
+                        span.best-product--item__hit.product-attr-status Хит
+                    a(data-fancybox="gallery" data-caption="Название" href="/static/img/general/bestseller/best-5-5.png").best-product--item__added-pic
+                        span.best-product--item__added-for-pic
+                            +icon('added-pic')
+                        img(src="/static/img/general/bestseller/best-5-5.png").best-product--item__img
+                    .shop-attr.best-product--shop-attr
+                        span.shop--compare.add-to-compare-catalog
+                            +icon('compare')
+                        span.shop--favourite.add-to-favourite-catalog
+                            +icon('star2')
+                            span.shop-favourite-add-to-favourite Добавить в избранное
+                .best-product--info
+                    a.best-product--info__link(href="/") Бегония Элатиор 11
+                    span.best-product--info__in-stock В наличии
+                    .best-product--info__price-quantity
+                        span.best-product--info__price 590.00 &#8381
+                        .best-product--info__quantity
+                            button.sub(type="button") -
+                            input.best-quantity(value="1" min="1")
+                            button.add(type="button") +
+                    include ../../../../modules/buttons/best-add-to-cart
+                .best-product--info--type-list__wrapper
+                    .best-product--info--type-list__wrap
+                        .best-product--info--type-list
+                            a.best-product--info__type--list__link(href="/") Алоказия Полли 12 40
+                            ul.best-product--type--list-list
+                                li.best-product--type--list-item
+                                    span.best-product--type--list-item-name Наличие:
+                                    span.best-product--type--list-item-status Предзаказ
+                                li.best-product--type--list-item
+                                    span.best-product--type--list-item-name Ориентировочная дата поступления в продажу:
+                                    span.best-product--type--list-item-status 22.08.2019
+                                li.best-product--type--list-item
+                                    span.best-product--type--list-item-name Производитель:
+                                    span.best-product--type--list-item-status Голландия
+                                li.best-product--type--list-item
+                                    span.best-product--type--list-item-name Актикул:
+                                    span.best-product--type--list-item-status 00001218
+                                li.best-product--type--list-item
+                                    span.best-product--type--list-item-name Тип растения:
+                                    span.best-product--type--list-item-status кустарник, травянистое
+                        ul.best-product--info--type-list
+                            li.best-product--cart--compare-favourite.best-product--shop-attr.best-item-margin
+                                span.shop--compare.add-to-compare-catalog
+                                    +icon('compare')
+                                    span В сравнение
+                                span.shop--favourite.add-to-favourite-catalog
+                                    +icon('star2')
+                                    span В избранное
+                            li.best-product--cart--quantity.best-item-margin
+                                span Количество:
+                                .best-product--info__quantity
+                                    button.sub(type="button") -
+                                    input.best-quantity(value="1" min="1")
+                                    button.add(type="button") +
+                            li.best-product--cart--price.best-item-margin
+                                span.best-product--cart--price---item Стоимость:
+                                span.best-product--info__price 300.00 &#8381
+                            include ../../../../modules/buttons/best-add-to-cart
+
+            .best-product--item
+                .best-product--item__link--wrap
+                    .best-product--item__attr
+                        span.best-product--item__hit.product-attr-status Хит
+                    a(data-fancybox="gallery" data-caption="Название" href="/static/img/general/bestseller/best-6-6.png").best-product--item__added-pic
+                        span.best-product--item__added-for-pic
+                            +icon('added-pic')
+                        img(src="/static/img/general/bestseller/best-6-6.png").best-product--item__img
+                    .shop-attr.best-product--shop-attr
+                        span.shop--compare.add-to-compare-catalog
+                            +icon('compare')
+                        span.shop--favourite.add-to-favourite-catalog
+                            +icon('star2')
+                            span.shop-favourite-add-to-favourite Добавить в избранное
+                .best-product--info
+                    a.best-product--info__link(href="/") Бегония Элатиор 15
+                    span.best-product--info__in-stock В наличии
+                    .best-product--info__price-quantity
+                        span.best-product--info__price 230.00 &#8381
+                        .best-product--info__quantity
+                            button.sub(type="button") -
+                            input.best-quantity(value="1" min="1")
+                            button.add(type="button") +
+                    include ../../../../modules/buttons/best-add-to-cart
+                .best-product--info--type-list__wrapper
+                    .best-product--info--type-list__wrap
+                        .best-product--info--type-list
+                            a.best-product--info__type--list__link(href="/") Алоказия Полли 12 40
+                            ul.best-product--type--list-list
+                                li.best-product--type--list-item
+                                    span.best-product--type--list-item-name Наличие:
+                                    span.best-product--type--list-item-status Предзаказ
+                                li.best-product--type--list-item
+                                    span.best-product--type--list-item-name Ориентировочная дата поступления в продажу:
+                                    span.best-product--type--list-item-status 22.08.2019
+                                li.best-product--type--list-item
+                                    span.best-product--type--list-item-name Производитель:
+                                    span.best-product--type--list-item-status Голландия
+                                li.best-product--type--list-item
+                                    span.best-product--type--list-item-name Актикул:
+                                    span.best-product--type--list-item-status 00001218
+                                li.best-product--type--list-item
+                                    span.best-product--type--list-item-name Тип растения:
+                                    span.best-product--type--list-item-status кустарник, травянистое
+                        ul.best-product--info--type-list
+                            li.best-product--cart--compare-favourite.best-product--shop-attr.best-item-margin
+                                span.shop--compare.add-to-compare-catalog
+                                    +icon('compare')
+                                    span В сравнение
+                                span.shop--favourite.add-to-favourite-catalog
+                                    +icon('star2')
+                                    span В избранное
+                            li.best-product--cart--quantity.best-item-margin
+                                span Количество:
+                                .best-product--info__quantity
+                                    button.sub(type="button") -
+                                    input.best-quantity(value="1" min="1")
+                                    button.add(type="button") +
+                            li.best-product--cart--price.best-item-margin
+                                span.best-product--cart--price---item Стоимость:
+                                span.best-product--info__price 300.00 &#8381
+                            include ../../../../modules/buttons/best-add-to-cart
+
+            .best-product--item
+                .best-product--item__link--wrap
+                    .best-product--item__attr
+                        span.best-product--item__hit.product-attr-status Хит
+                    a(data-fancybox="gallery" data-caption="Название" href="/static/img/general/bestseller/best-6-6.png").best-product--item__added-pic
+                        span.best-product--item__added-for-pic
+                            +icon('added-pic')
+                        img(src="/static/img/general/bestseller/best-6-6.png").best-product--item__img
+                    .shop-attr.best-product--shop-attr
+                        span.shop--compare.add-to-compare-catalog
+                            +icon('compare')
+                        span.shop--favourite.add-to-favourite-catalog
+                            +icon('star2')
+                            span.shop-favourite-add-to-favourite Добавить в избранное
+                .best-product--info
+                    a.best-product--info__link(href="/") Бегония Элатиор 15
+                    span.best-product--info__in-stock В наличии
+                    .best-product--info__price-quantity
+                        span.best-product--info__price 230.00 &#8381
+                        .best-product--info__quantity
+                            button.sub(type="button") -
+                            input.best-quantity(value="1" min="1")
+                            button.add(type="button") +
+                    include ../../../../modules/buttons/best-add-to-cart
+                .best-product--info--type-list__wrapper
+                    .best-product--info--type-list__wrap
+                        .best-product--info--type-list
+                            a.best-product--info__type--list__link(href="/") Алоказия Полли 12 40
+                            ul.best-product--type--list-list
+                                li.best-product--type--list-item
+                                    span.best-product--type--list-item-name Наличие:
+                                    span.best-product--type--list-item-status Предзаказ
+                                li.best-product--type--list-item
+                                    span.best-product--type--list-item-name Ориентировочная дата поступления в продажу:
+                                    span.best-product--type--list-item-status 22.08.2019
+                                li.best-product--type--list-item
+                                    span.best-product--type--list-item-name Производитель:
+                                    span.best-product--type--list-item-status Голландия
+                                li.best-product--type--list-item
+                                    span.best-product--type--list-item-name Актикул:
+                                    span.best-product--type--list-item-status 00001218
+                                li.best-product--type--list-item
+                                    span.best-product--type--list-item-name Тип растения:
+                                    span.best-product--type--list-item-status кустарник, травянистое
+                        ul.best-product--info--type-list
+                            li.best-product--cart--compare-favourite.best-product--shop-attr.best-item-margin
+                                span.shop--compare.add-to-compare-catalog
+                                    +icon('compare')
+                                    span В сравнение
+                                span.shop--favourite.add-to-favourite-catalog
+                                    +icon('star2')
+                                    span В избранное
+                            li.best-product--cart--quantity.best-item-margin
+                                span Количество:
+                                .best-product--info__quantity
+                                    button.sub(type="button") -
+                                    input.best-quantity(value="1" min="1")
+                                    button.add(type="button") +
+                            li.best-product--cart--price.best-item-margin
+                                span.best-product--cart--price---item Стоимость:
+                                span.best-product--info__price 300.00 &#8381
+                            include ../../../../modules/buttons/best-add-to-cart
+
+            .best-product--item
+                .best-product--item__link--wrap
+                    .best-product--item__attr
+                        span.best-product--item__hit.product-attr-status Хит
+                    a(data-fancybox="gallery" data-caption="Название" href="/static/img/general/bestseller/best-6-6.png").best-product--item__added-pic
+                        span.best-product--item__added-for-pic
+                            +icon('added-pic')
+                        img(src="/static/img/general/bestseller/best-6-6.png").best-product--item__img
+                    .shop-attr.best-product--shop-attr
+                        span.shop--compare.add-to-compare-catalog
+                            +icon('compare')
+                        span.shop--favourite.add-to-favourite-catalog
+                            +icon('star2')
+                            span.shop-favourite-add-to-favourite Добавить в избранное
+                .best-product--info
+                    a.best-product--info__link(href="/") Бегония Элатиор 15
+                    span.best-product--info__in-stock В наличии
+                    .best-product--info__price-quantity
+                        span.best-product--info__price 230.00 &#8381
+                        .best-product--info__quantity
+                            button.sub(type="button") -
+                            input.best-quantity(value="1" min="1")
+                            button.add(type="button") +
+                    include ../../../../modules/buttons/best-add-to-cart
+                .best-product--info--type-list__wrapper
+                    .best-product--info--type-list__wrap
+                        .best-product--info--type-list
+                            a.best-product--info__type--list__link(href="/") Алоказия Полли 12 40
+                            ul.best-product--type--list-list
+                                li.best-product--type--list-item
+                                    span.best-product--type--list-item-name Наличие:
+                                    span.best-product--type--list-item-status Предзаказ
+                                li.best-product--type--list-item
+                                    span.best-product--type--list-item-name Ориентировочная дата поступления в продажу:
+                                    span.best-product--type--list-item-status 22.08.2019
+                                li.best-product--type--list-item
+                                    span.best-product--type--list-item-name Производитель:
+                                    span.best-product--type--list-item-status Голландия
+                                li.best-product--type--list-item
+                                    span.best-product--type--list-item-name Актикул:
+                                    span.best-product--type--list-item-status 00001218
+                                li.best-product--type--list-item
+                                    span.best-product--type--list-item-name Тип растения:
+                                    span.best-product--type--list-item-status кустарник, травянистое
+                        ul.best-product--info--type-list
+                            li.best-product--cart--compare-favourite.best-product--shop-attr.best-item-margin
+                                span.shop--compare.add-to-compare-catalog
+                                    +icon('compare')
+                                    span В сравнение
+                                span.shop--favourite.add-to-favourite-catalog
+                                    +icon('star2')
+                                    span В избранное
+                            li.best-product--cart--quantity.best-item-margin
+                                span Количество:
+                                .best-product--info__quantity
+                                    button.sub(type="button") -
+                                    input.best-quantity(value="1" min="1")
+                                    button.add(type="button") +
+                            li.best-product--cart--price.best-item-margin
+                                span.best-product--cart--price---item Стоимость:
+                                span.best-product--info__price 300.00 &#8381
+                            include ../../../../modules/buttons/best-add-to-cart
+
+            .best-product--item
+                .best-product--item__link--wrap
+                    .best-product--item__attr
+                        span.best-product--item__hit.product-attr-status Хит
+                    a(data-fancybox="gallery" data-caption="Название" href="/static/img/general/bestseller/best-6-6.png").best-product--item__added-pic
+                        span.best-product--item__added-for-pic
+                            +icon('added-pic')
+                        img(src="/static/img/general/bestseller/best-6-6.png").best-product--item__img
+                    .shop-attr.best-product--shop-attr
+                        span.shop--compare.add-to-compare-catalog
+                            +icon('compare')
+                        span.shop--favourite.add-to-favourite-catalog
+                            +icon('star2')
+                            span.shop-favourite-add-to-favourite Добавить в избранное
+                .best-product--info
+                    a.best-product--info__link(href="/") Бегония Элатиор 15
+                    span.best-product--info__in-stock В наличии
+                    .best-product--info__price-quantity
+                        span.best-product--info__price 230.00 &#8381
+                        .best-product--info__quantity
+                            button.sub(type="button") -
+                            input.best-quantity(value="1" min="1")
+                            button.add(type="button") +
+                    include ../../../../modules/buttons/best-add-to-cart
+                .best-product--info--type-list__wrapper
+                    .best-product--info--type-list__wrap
+                        .best-product--info--type-list
+                            a.best-product--info__type--list__link(href="/") Алоказия Полли 12 40
+                            ul.best-product--type--list-list
+                                li.best-product--type--list-item
+                                    span.best-product--type--list-item-name Наличие:
+                                    span.best-product--type--list-item-status Предзаказ
+                                li.best-product--type--list-item
+                                    span.best-product--type--list-item-name Ориентировочная дата поступления в продажу:
+                                    span.best-product--type--list-item-status 22.08.2019
+                                li.best-product--type--list-item
+                                    span.best-product--type--list-item-name Производитель:
+                                    span.best-product--type--list-item-status Голландия
+                                li.best-product--type--list-item
+                                    span.best-product--type--list-item-name Актикул:
+                                    span.best-product--type--list-item-status 00001218
+                                li.best-product--type--list-item
+                                    span.best-product--type--list-item-name Тип растения:
+                                    span.best-product--type--list-item-status кустарник, травянистое
+                        ul.best-product--info--type-list
+                            li.best-product--cart--compare-favourite.best-product--shop-attr.best-item-margin
+                                span.shop--compare.add-to-compare-catalog
+                                    +icon('compare')
+                                    span В сравнение
+                                span.shop--favourite.add-to-favourite-catalog.add-to-favourite-catalog
+                                    +icon('star2')
+                                    span В избранное
+                            li.best-product--cart--quantity.best-item-margin
+                                span Количество:
+                                .best-product--info__quantity
+                                    button.sub(type="button") -
+                                    input.best-quantity(value="1" min="1")
+                                    button.add(type="button") +
+                            li.best-product--cart--price.best-item-margin
+                                span.best-product--cart--price---item Стоимость:
+                                span.best-product--info__price 300.00 &#8381
+                            include ../../../../modules/buttons/best-add-to-cart
+        a.best-button-show-more(href="/") Показать еще товары

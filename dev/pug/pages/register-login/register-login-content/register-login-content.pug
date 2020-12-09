@@ -1,0 +1,19 @@
+section.register-login
+    .register-login-wrap
+        .row
+            .col-xl-9
+                h2.section-title Вход в личный кабинет
+                form.register-login-form
+                    .register-login-data
+                        h5 Для регистрации или входа введите свой номер телефона
+                        .register-login-data--info
+                            label Введите номер телефона
+                            input.mask-field(type="text" placeholder="+7 (000) 000-00-00")
+                        button.partner-login-button.register-login--button(href="register-login/register-login-wrap2") Войти
+            .col-xl-3.p-3.stock-slider-none
+                .delivery-stock
+                    .sidebar-stock--item(style="background-image:url('/static/img/general/stocks/stock2.png')")
+                        span.sidebar-stock--item__text Гибрид подсолнечника по сниженной цене
+                        a.sidebar-stock--item__link(href="/")
+                            span Подробнее
+                            +icon('more-arrow')

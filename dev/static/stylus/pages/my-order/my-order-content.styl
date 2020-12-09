@@ -1,0 +1,259 @@
+.my-profile-item.active
+  background: #AFF2B4;
+
+.my-profile-item
+  border-radius: 24px 0px;
+  padding 10px 20px
+  cursor pointer
+  font-family "Circe Bold",sans-serif
+
+.my-profile-stock,.my-order--list--item
+  padding-top 96px
+
+.my-order-item
+  display flex
+  justify-content space-between
+  align-items center
+  background: #EBFCE8;
+  border-radius: 24px 0px;
+  padding 15px 25px
+  margin-bottom 20px
+
+.my-order-item--wrap
+  display flex
+  flex-direction column
+
+.my-order-item-more
+  max-width 230px
+  font-size 16px
+
+.my-order-item__number
+  font-family "Circe Bold",sans-serif
+  margin-bottom 3px
+
+.my-order-item__date
+  font-family "Circe Regular",sans-serif
+
+.my-order-all-orders
+  max-width 230px
+  background-color #5BDF78
+  color #fff
+  margin 0 auto
+  cursor pointer
+  margin-top 50px
+
+.my-order-items-show-all
+  display none
+
+.tabs-content-items-profile
+  display none
+.tabs-content-items-profile.active
+  display block
+.my-order-info__wrap
+  display none
+.my-order-info-birthdate
+  box-shadow: 1px 2px 10px rgba(46, 46, 46, 0.2)
+
+.my-order-info__submit
+  background-color #5BDF78;
+  color #fff
+  margin: 30px 0px 10px;
+
+.my-adress--wrap
+  background: #EBFCE8;
+  border-radius: 24px 0px;
+  padding 25px
+  font-family "Circe Regular",sans-serif
+
+.my-adress--checkbox-list-delete
+  position absolute
+  right 0
+  display flex
+  align-items center
+  justify-content center
+  background-color #888888
+  border-radius 50%
+  cursor pointer
+
+  .icon
+    size(20px)
+    fill #fff
+    padding 5px
+
+.my-adress--checkbox-item
+  display flex
+  align-items center
+  margin-top 20px
+  position relative
+
+.my-adress--checkbox-list
+  display flex
+  flex-direction column
+
+
+.my-adress--checkbox-list-check
+  display none
+
+.my-adress--checkbox-list-field
+  background: #FFFFFF;
+  box-shadow: inset 1px 2px 10px rgba(46, 46, 46, 0.2);
+  border-radius: 6px;
+  size(20px)
+  position relative
+  cursor pointer
+  margin-right 30px
+
+.my-adress--checkbox-list-field.checked:after
+  content ''
+  absolute-center()
+  background: #70DD7B;
+  border-radius: 10px;
+  size(14px)
+
+.my-address-button-add
+  display flex
+  justify-content center
+  align-items center
+  cursor pointer
+
+.my-address__change
+  display block
+
+.my-address__change--save
+  display none
+
+.my-adress-change-new-address
+  display flex
+  align-items center
+  justify-content space-between
+
+.my-adress-change-new-address-info
+  display flex
+  flex-direction column
+
+  input
+    max-width 130px
+
+.my-address-save-changes
+  display flex
+
+.my-adress-change-new-address-info2
+  margin-top  35px
+  position relative
+
+#my-adress-change-agree
+  display none
+  position relative
+
+.my-adress-change-new-address-info2 + label
+  position absolute
+  cursor pointer
+
+
+.my-adress-change-new-address-info2 label
+  display flex
+
+#my-adress-change-agree + label:before
+    content: '';
+    margin-right: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    size(20px)
+    background: #fff;
+    -webkit-box-shadow: inset 0px 4px 4px rgba(0,0,0,0.25);
+    box-shadow: inset 0px 4px 4px rgba(0,0,0,0.25);
+    border-radius: 4px;
+
+#my-adress-change-agree:checked + label:after
+    content: '';
+    position: absolute;
+    left: 5px;
+    top: 10px;
+    background: #5bdf78;
+    width: 2px;
+    height: 2px;
+    -webkit-box-shadow: -4px 0px 0 #5bdf78, 2px 0px 0 #5bdf78, -2px 0px 0 #5bdf78, 4px 0 0 #5bdf78, 4px -2px 0 #5bdf78, 4px -4px 0 #5bdf78, 4px -6px 0 #5bdf78, 4px -8px 0 #5bdf78, 4px -10px 0 #5bdf78;
+    box-shadow: -4px 0px 0 #5bdf78, 2px 0px 0 #5bdf78, -2px 0px 0 #5bdf78, 4px 0 0 #5bdf78, 4px -2px 0 #5bdf78, 4px -4px 0 #5bdf78, 4px -6px 0 #5bdf78, 4px -8px 0 #5bdf78, 4px -10px 0 #5bdf78;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+
+.my-address-bg-tr
+  background-color #fff
+  width 48%
+  color #5BDF78
+  justify-content center
+
+.my-address-save-changes
+  width 48%
+  justify-content center
+
+.my-address__buttons
+  display flex
+  justify-content space-between
+  width 100%
+  padding-top 30px
+
+
+.my-bonus--wrap
+  display flex
+  flex-direction column
+  align-items center
+  justify-content center
+
+  p
+    color #2E2E2E
+    font-family "Circe Regular",sans-serif
+
+  h2
+    font-size 30px
+    font-family "Circe Bold",sans-serif
+    color #5BDF78
+    padding-bottom 50px
+    padding-top 15px
+
+  a
+    color #888888
+    text-decoration underline
+
+.my-pass-change button
+  margin 10px 0 10px
+
+
+.order-item__list--wrap
+  background: #EBFCE8;
+  border-radius: 24px 0px;
+  font-family "Circe Regular",sans-serif
+  padding 20px 15px
+
+.order-item__list--wrap-number
+  font-family "Circe Bold",sans-serif
+  color #5BDF78
+
+.order-item__list--wrap-item
+  width 100%
+  display flex
+  padding-top 15px
+
+.order-item__list--wrap-item--name
+  width 30%
+  font-family "Circe Bold", sans-serif
+
+.order-item__list--wrap-item--option
+  width 70%
+
+.order-item__list-product-order--item
+  flex-basis: calc(50% - 0.8rem);
+
+
+
+
+
+
+
+
+
+
+
+

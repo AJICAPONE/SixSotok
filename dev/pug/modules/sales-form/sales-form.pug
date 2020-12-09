@@ -1,0 +1,13 @@
+.sales-form(style="background-image:url('/static/img/general/sales-form.png')")
+    span.sales-form-title Узнавайте первыми о новинках и скидках!
+    form.sales-form--submit
+        .sales--submit
+            input.sales-form--submit__input(placeholder="e-mail")
+            button.sales-form--submit__button(type="submit") Подписаться
+        .sales-agree
+            input.sales-form--agree-checkbox#agree-check(type="checkbox")
+            label(for="agree-check")
+            span.sales-form--agree-text Я согласен с
+                a(href="").sales-form--agree-text--link условиями
+                span обработки персональных данных
+        button.sales-form--submit__button.sales-mobile-button(type="submit") Подписаться

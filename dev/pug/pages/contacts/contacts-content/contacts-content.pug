@@ -1,0 +1,55 @@
+section.contacts
+    .contacts-wrap
+        .row
+            .col-xl-9
+                h2.section-title Контакты
+                .pay-list--wrap
+                    ul.delivery-ways--list
+                        li
+                            .delivery-ways--list-item
+                                span.delivery-ways--num4
+                                .delivery-ways--title-text
+                                    h6.devivery-ways--list--title Наш розничный магазин находится по адресу:
+                                    span г. Пенза, пр-кт Строителей 21а, ТЦ «Арбековский»
+                                    .contacts-time__work
+                                        span.contacts-time-w Режим работы:
+                                        span ежедневно 9.00 — 19.00
+                        li
+                            .delivery-ways--list-item
+                                span.delivery-ways--num4
+                                .delivery-ways--title-text
+                                    h6.devivery-ways--list--title Интернет-магазин:
+                                    span заказы принимаются круглосуточно, обрабатываются ежедневно 8.00 - 20.00
+                        li
+                            .delivery-ways--list-item
+                                span.delivery-ways--num4
+                                .delivery-ways--title-text
+                                    h6.devivery-ways--list--title Контактный телефон интернет-магазина
+                                    .contacts-phones--wrap
+                                        a.contacts-phones(href="tel:398589") 39-85-89
+                                        a.contacts-phones(href="tel:+79272898589") +7 (927) 289-85-89
+                        li
+                            .delivery-ways--list-item
+                                span.delivery-ways--num4
+                                .delivery-ways--title-text
+                                    h6.devivery-ways--list--title Реквизиты
+                                    span ИП Вишнева О.Н. ИНН 583519080209 ОГРНИП 315583500001770
+                                    span Расчетный счет 40802810100000405663
+                                    span АО «ТИНЬКОФФ БАНК» г. Москва
+                                    span БИК 044525974 Корр. счет 30101810145250000974
+
+                    .contacts-map--wrap
+                        script(type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aa429b0bf87f5781fc4e1b36faea5351e2385b852b36130934a6145e1345544de&amp;width=817&amp;height=400&amp;lang=ru_RU&amp;scroll=true")
+
+            .col-xl-3.p-3.stock-slider-none
+                .delivery-stock
+                    .sidebar-stock--item(style="background-image:url('/static/img/general/stocks/stock1.png')")
+                        span.sidebar-stock--item__text Свежая зелень — в каждый дом!
+                        a.sidebar-stock--item__link(href="/")
+                            span Подробнее
+                            +icon('more-arrow')
+                    .sidebar-stock--item(style="background-image:url('/static/img/general/stocks/stock2.png')")
+                        span.sidebar-stock--item__text Гибрид подсолнечника по сниженной цене
+                        a.sidebar-stock--item__link(href="/")
+                            span Подробнее
+                            +icon('more-arrow')

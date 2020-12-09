@@ -1,0 +1,20 @@
+.sort-catalog-popup--wrap
+    .sort-catalog-popup--wraper.col-sm-12
+        .mobile-catalog-close
+            .mobile-catalog-close--icon
+                +icon('delete')
+        .sort-catalog-popup.col-sm-6
+            h4 Сортировка
+            form.sort-catalog-popup-alphabet
+                span По алфавиту
+                .sort-divs-catalog-popup
+                    .sort-catalog-popup-alphabet-item
+                        input.sort-catalog-popup-alphabet__input#alpha1(type="radio" name="radio-alpha" value="1")
+                        label(for="alpha1") По новизне
+                    .sort-catalog-popup-alphabet-item
+                        input.sort-catalog-popup-alphabet__input#alpha2(type="radio" name="radio-alpha" value="2")
+                        label(for="alpha2") Сначала дешевые
+                    .sort-catalog-popup-alphabet-item
+                        input.sort-catalog-popup-alphabet__input#alpha3(type="radio" name="radio-alpha" value="3")
+                        label(for="alpha3") Сначала дорогие
+                    button.sort-catalog-popup-agree__button(type="submit") Применить

@@ -1,0 +1,355 @@
+.basket-table
+  width 100%
+  border-spacing: 0px 16px;
+  border-collapse separate
+
+.basket-content-items__img
+  size(100px)
+  margin 5px 18px
+  background-color #fff
+  border-radius: 30px 0px;
+
+.basket-content-items
+  border-radius: 30px 0px 0px;
+  width 50%
+
+.basket-content-items2
+  border-radius: 0px 0px 30px;
+  padding 15px
+
+.basket-content-items--content
+  display flex
+
+.basket-content-items__name--desc
+  display flex
+  justify-content center
+  flex-direction column
+  font-family "Circe Regular",sans-serif
+  width 100%
+
+.basket-content-items__name
+  margin-bottom 6px
+
+.basket-attention
+  font-size 14px
+  color #F76262
+  line-height 1.2
+
+.basket-attention-wrap
+  display flex
+  height: 0;
+  margin-bottom: 6px;
+
+  span
+    font-size 18px
+    background-color #F76262
+    color #fff
+    font-family "Circe Bold", sans-serif
+    width: 100%;
+    height: 23px;
+    max-width: 23px;
+    border-radius: 10px 0px;
+    display flex
+    justify-content center
+    align-items center
+    margin-right 6px
+
+
+.basket-content-items--wrap
+  background: #DAFFD3;
+  margin-bottom 16px
+  width 100%
+  font-family "Circe Regular",sans-serif
+
+.basket-delete--item
+  size(18px)
+  background-color #888888
+  border-radius 50%
+  position relative
+  cursor pointer
+  margin 0 auto
+
+  .icon
+    size(9px)
+    position: absolute;
+    top: 54%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    fill #fff
+
+.basket-quantity
+  justify-content center
+
+.basket-table-title
+  font-family "Circe Light",sans-serif
+  font-size 16px
+  color #888888
+  line-height: 0;
+
+.basket-promo
+  display flex
+  align-items center
+  margin-bottom 30px
+
+  input
+    background: rgba(218, 255, 211, 0.6);
+    border-radius: 5px;
+    box-shadow none
+    height 40px
+    width 100%
+    max-width 351px
+
+.basket-promo--title
+  font-family "Circe Bold",sans-serif
+  margin-right 10px
+
+.basket-bous-balance--title
+  font-family "Circe Regular",sans-serif !important
+
+.basket-bous-balance
+  display flex
+  align-items center
+  margin-bottom 35px
+
+  span
+    font-family "Circe Bold", sans-serif
+    font-size 24px
+
+.basket-bous-balance--count
+  color #5BDF78
+  margin-left 10px
+
+#basket-bonus
+  background: #aff2b4;
+  box-shadow: inset 0px 4px 4px rgba(0,0,0,0.1);
+  border-radius: 30px;
+  width: 63px;
+  height: 29px;
+  border: none;
+  text-align: center;
+  font-family: "Circe Bold", sans-serif;
+
+#basket-bonus-js .ui-slider-handle
+  background: #5bdf78 !important;
+  -webkit-box-shadow: 1px 2px 6px rgba(91,223,120,0.7) !important;
+  box-shadow: 1px 2px 6px rgba(91,223,120,0.7) !important;
+  border-radius: 50%;
+  outline: none;
+  border: none !important;
+  top: -0.5em !important;
+  cursor pointer
+
+#basket-bonus-js .ui-slider-range
+  background: #5bdf78;
+  border-radius: 10px;
+  border: none;
+
+#basket-bonus-js
+  background: #888 !important;
+  border-radius: 10px !important;
+  height: 5px !important;
+  border: none !important;
+
+.basket-use-bonus
+  display flex
+  justify-content space-between
+  align-items center
+  margin-bottom 25px
+
+.basket-use-bonus--title
+  font-family "Circe Regular",sans-serif
+
+.basket-bonus
+  padding: 50px 35px;
+  border: 1px solid #5BDF78;
+  border-radius: 30px 0px;
+  display none
+
+.basket-bonus-hidden
+  padding: 50px 35px;
+  border: 1px solid #5BDF78;
+  border-radius: 30px 0px;
+
+.basket-bonus-hidden__button
+  background-color #5BDF78
+  color #fff
+  margin-bottom 16px
+  cursor pointer
+
+.basket-bonus-hidden__link
+  color #888888
+  font-size 14px
+  text-decoration underline
+  font-family "Circe Regular",sans-serif
+
+#basket-min
+  position absolute
+  top 30px
+  font-family "Circe Regular",sans-serif
+  font-size 14px
+
+.basket-promo-bonus-wrap
+  display flex
+  justify-content space-between
+  margin-bottom 60px
+  margin-top 20px
+
+.basket-check-list2
+  background: #DAFFD3;
+  border-radius: 30px 0px;
+  width 100%
+  max-width 430px
+  float right
+  display block
+
+  button
+    width 100%
+    max-width 370px
+    display flex
+    justify-content center
+    align-items center
+    margin 0 auto 35px
+.basket-check-list
+  padding: 50px 100px 11px 30px;
+
+.basket-check-item
+  display flex
+  justify-content space-between
+  margin-bottom 20px
+  font-family "Circe Regular",sans-serif
+
+.basket-check-count-big
+  font-size 30px
+  font-family "Circe Bold", sans-serif
+
+.basket-promo-bonus
+  padding 0
+  margin-bottom 18px
+
+.basket-checkout
+  padding 0
+
+.basket-attention-popup
+  position: fixed;
+  overflow-y: scroll;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 0;
+  background: #ebfce8;
+  opacity: 0.95;
+  z-index: 9990;
+  padding-bottom: 60px;
+  font-family: "Circe Regular", sans-serif;
+  display: none;
+
+.basket-attention-popup-name
+  font-family "Circe Bold", sans-serif
+
+
+.basket-attention-popup .basket-attention-popup-name
+  margin-bottom 10px
+  display block
+
+.basket-attention-popup-wrap
+  padding: 60px
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+.mobile-basket--item
+  background: #DAFFD3;
+  border-radius: 30px 0px;
+
+.mobile-basket-info-summ
+  display flex
+  flex-direction column
+
+  span
+    font-family "Circe Regular",sans-serif
+
+.mobile-basket-info-count
+  span
+    font-family "Circe Regular",sans-serif
+
+.mobile-basket-info-summ-name
+  color #595959
+  font-size 14px
+  margin-bottom 8px
+  display block
+
+.mobile-basket-info-count-summ
+  padding 0 18px
+  margin-top 30px
+  display flex
+  justify-content space-between
+
+.mobile-basket--list
+  display none
+
+.mobile-basket-info-summ--input
+  border: 1px solid #5BDF78;
+  box-sizing: border-box;
+  box-shadow: 3px 6px 8px rgba(91, 223, 120, 0.4);
+  border-radius: 16px 0px;
+  width 100%
+  max-width 98px
+  height 32px
+
+  &:hover
+    background: #FF4141;
+    box-shadow: 3px 6px 8px rgba(255, 65, 65, 0.3);
+    border-radius: 16px 0px;
+
+
+.mobile-basket-info-count-summ2
+  margin-top 0
+  padding-bottom 17px
+
+
+.datepicker-dropdown
+  background-color #F4F4F4
+  padding 0
+  font-family "Circe Regular",sans-serif
+  border none
+.datepicker-dropdown .table-condensed thead tr th
+  text-align center
+.datepicker-dropdown .table-condensed thead tr:nth-child(2)
+  background-color #5BDF78
+  color #f4f4f4
+.datepicker-dropdown .table-condensed thead tr:nth-child(2) th
+  padding 10px 8px
+
+.datepicker-dropdown .table-condensed thead tr th.dow
+  padding-top 30px
+  padding-left 11px
+  padding-right 11px
+  font-size 12px
+  color #888888
+.datepicker-dropdown .table-condensed tbody tr td
+  text-align center
+  font-size 12px
+  padding: 0 8.8px;
+.datepicker-dropdown .table-condensed tbody tr td.active.day
+  background-color #ff4141
+  border-radius 50%
+  width: 20px;
+  height: 17px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 0 auto;
+  text-align: center;
+
+.mobile-basket--item
+  margin-bottom 18px
+.mobile-basket--item .basket-content-items--content
+  padding-top 8px
+
+
+
+
+
+

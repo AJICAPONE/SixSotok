@@ -1,0 +1,21 @@
+extends ../layout/404
+
+block variables
+    - var title = '404'
+    - var pageClass = 'common-page'
+
+block content
+    .content-404(style="background-image:url('static/img/general/404.png')")
+        h1.error-404 404
+        span Страница, на которую вы пытались попасть, не существует или была удалена
+        a(href="/") Отправить отчет об ошибке
+        form
+            .error-search
+                input(type="text" placeholder="Что вы искали?")
+                button.error-search-button(type="submit")
+                    +icon('search')
+        .error__buttons
+            a.catalog-error.all-buttons-green(href="/") В каталог товаров
+            a.catalog-error.all-buttons-green(href="/") На глувную
+
+

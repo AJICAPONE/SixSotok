@@ -1,0 +1,357 @@
+// ===========================  Навигационное меню и Слайдер ===========================//
+.nav--main
+  display: flex;
+  align-items: center;
+  height: max-content;
+  margin-bottom: 12px;
+  font-family "Circe Regular",sans-serif
+
+.slider-and-nav__menu
+  display flex
+  justify-content space-between
+  width 100%
+
+.nav__menu
+  display flex
+  justify-content space-between
+  width 58%
+
+.nav__menu--item--link
+  display block
+  padding 12px 0
+  cursor pointer
+
+  .icon
+    size(10px)
+    fill #2E2E2E
+    margin-left 3px
+    transform rotate(180deg)
+
+.nav__menu--item__more
+  position relative
+
+.nav__menu--item__more--list
+  position absolute
+  opacity 0
+  clip rect(0,0,0,0)
+  z-index 9
+  background: #BAF9B0;
+  box-shadow: 2px 4px 12px rgba(91, 223, 120, 0.3);
+  border-radius: 24px 0px;
+  padding: 12px 22px;
+  width: max-content;
+  transition linear .2s
+.nav__menu--more
+  clip auto
+  opacity 1
+.nav__menu--item__more--item
+  margin-bottom 5px
+
+  &:last-child
+    margin-bottom 0
+
+.shop-attr-and--basket-attr
+  display flex
+
+.shop-attr
+  display flex
+  padding 12px
+
+
+.best-product--item__link--wrap .shop-attr
+  position: absolute;
+  right: 0px;
+  bottom 0
+  z-index 20
+
+  span
+    cursor pointer
+
+
+.shop--compare,.shop--favourite
+  position relative
+  height max-content
+
+  .icon
+    size(25px)
+
+
+.shop--favourite .icon
+    filter: drop-shadow(1px 2px 4px rgba(0, 0, 0, 0.2));
+    fill: #5BDF78;
+    stroke-width: 0.8;
+    stroke: #5BDF78;
+
+.basket-att
+  display flex
+  justify-content center
+  align-items center
+
+
+.basket-attr
+  display: flex;
+  align-items: center;
+  position relative
+  background-color #5BDF78
+  border-radius: 24px 0px;
+  padding: 9px 16px;
+  box-shadow 0px 4px 12px 2px rgba(91, 223, 120, 0.6)
+  width 200px
+  cursor pointer
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+
+
+  .icon
+    size(25px)
+    fill #fff
+    margin-right 14px
+
+  &:hover
+    background: #FF4141;
+    box-shadow: 2px 4px 12px rgba(255, 65, 65, 0.4);
+
+  &:active
+    background: #FF414;
+    box-shadow: inset 0px 4px 12px 2px rgba(196, 24, 24, 0.5);
+
+.basket-items
+  display: flex;
+  flex-direction: column;
+  color #fff
+
+.backet--count
+  padding-left 5px
+  font-family Circe Bold,sans-serif
+
+.shop--compare
+  margin-right 6px
+
+.invisible-wall
+  display: block;
+  height: 20px;
+  position: absolute;
+  right: 0;
+  width: 200px;
+  bottom: -19px;
+.popup-basket-wrap
+  position: absolute;
+  display none
+  right 0
+  background-color #fff
+  box-shadow: 2px 4px 20px rgba(91, 223, 120, 0.3);
+  border-radius: 30px 0px;
+  width 460px
+  padding 21px 18px
+  top: 81px;
+  z-index: 10;
+  cursor default
+
+  &:before
+    content ''
+    position absolute
+    -webkit-clip-path: polygon(50% 30%, 0% 100%, 100% 100%);
+    clip-path: polygon(50% 30%, 0% 100%, 100% 100%);
+    width: 25px;
+    height: 25px;
+    top: -24px;
+    background-color: #fff;
+    right: 159px;
+
+.popup-basket-items
+  width 100%
+  overflow-y scroll
+  height: 180px;
+  margin-bottom 20px
+
+
+.popup-basket-summ
+  justify-content: space-between;
+  display: flex;
+  margin-right 8px
+  border-top: 1px solid #5BDF78;
+  padding-right: 42px;
+  padding-top  10px
+  padding-bottom: 20px;
+
+.popup-basket--summ-count
+  font-family "Circe Bold",sans-serif
+
+.popup-basket-summ-buttons
+  display flex
+  justify-content space-between
+  width 100%
+
+.popup-basket-summ-buttons .all-buttons-green
+  width 45%
+
+  &:hover
+    color #fff
+.popup-basket-summ-add-to-cart
+  background-color transparent !important
+  color #5BDF78 !important
+  border: 1.2px solid #5BDF78 !important
+
+  &:hover
+    background-color #FF4141 !important
+    color #fff !important
+    border: 1.2px solid #FF4141 !important
+
+  &:active
+    box-shadow: inset 2px 6px 10px rgba(237, 29, 36, 0.5);
+
+.popup-basket-summ-checkout
+
+  &:hover
+    background-color #FF4141 !important
+    color #fff !important
+
+  &:active
+    box-shadow: inset 2px 6px 10px rgba(237, 29, 36, 0.5);
+
+
+.popup-basket--item--list
+  display flex
+  justify-content space-between
+  align-items center
+  padding-bottom: 20px;
+
+
+.popup-basket--item
+  width 190px
+  font-family "Circe Regular",sans-serif
+  font-size 14px
+
+.popup-basket-delete--item
+  padding 0
+  cursor pointer
+
+  .icon
+    background-color: #c4c4c4;
+    width: 15px;
+    height: 15px;
+    margin: 0;
+    border-radius: 30px;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+.popup-basket-price--item
+  padding 0 10px
+
+.popup-basket-items::-webkit-scrollbar
+  width: 20px;
+
+.popup-basket-items::-webkit-scrollbar-track
+  background: #C4C4C4;
+  border-left: 9px solid white;
+  border-right: 9px solid white;
+  border-radius: 9.5px;
+
+
+.popup-basket-items::-webkit-scrollbar-thumb
+  background: #5BDF78;
+  border-left: 7px solid white;
+  border-right: 7px solid white;
+  border-radius: 9px;
+
+
+.popup-basket-items::-webkit-scrollbar-thumb:window-inactive {
+  background: #5BDF78;
+}
+// ===========================  Навигационное меню и Слайдер ===========================//
+.slider-container
+  position relative
+
+.js-content--slider
+  position relative
+
+  .owl-nav
+    position absolute
+    right 0
+    bottom 0
+
+  .owl-dots
+    absolute-center()
+
+  .owl-stage-outer
+    border-radius 30px 0
+
+.js-content--slider .slick-list
+  border-radius: 30px 0px;
+
+.js-content--slider__item
+  position: relative;
+  background-size: cover
+  background-position: center
+  background-repeat: no-repeat
+  height 330px
+  cursor pointer
+
+.js-arrows-slider
+  position absolute
+  display flex
+  right 0
+  bottom 0
+  z-index 2
+
+
+.js-content--slider__controls--prev
+  border-radius: 30px 0px 0px
+
+.js-content--slider__controls--next
+  border-radius: 0px 0px 30px
+
+.slider-arrows
+  padding 20px 24px
+  background-color rgba(91, 223, 120, 0.8)
+  cursor pointer
+  transition linear .2s
+  &:hover
+    background-color rgba(91, 223, 120, 0.4)
+  .icon
+    fill #fff
+    size(11px,20px)
+
+
+.js-slider-controls-dots
+  position absolute
+  display flex
+  bottom 0
+  width: 100%;
+  justify-content: center;
+  padding-bottom: 20px;
+
+.js-slider-controls-dots .slick-dots
+  display flex
+
+.js-slider-slider__dots
+  background-color: rgba(255, 255, 255, 0.51);
+  padding: 5px;
+  border-radius: 50px;
+  cursor: pointer;
+  display: inline-block;
+  transition linear .2s
+
+.js-slider-controls-dots li
+  margin-right 15px
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+.js-slider-controls-dots li:last-child
+  margin-right 0
+
+.slick-active .js-slider-slider__dots
+  transform scale(1.6)
+  background-color #FFFFFF
+
+.js-content--slider__item--text
+  position: absolute;
+  bottom: 75px;
+  font-size: 92px;
+  color: #fff;
+  left: 43px;
+  line-height: 66px;
+  font-family "Amalfi Regular",sans-serif

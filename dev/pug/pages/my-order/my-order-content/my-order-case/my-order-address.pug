@@ -1,0 +1,41 @@
+.my-order-info__wrap.tabs-content-items-profile.tab-adress
+    .my-adress--wrap.my-address__change
+        p Выбранный вами адрес будет автоматически указан в графе «Адрес доставки» при оформлении заказа (с возможностью редактирования)
+        ul.my-adress--checkbox-list
+            li.my-adress--checkbox-item
+                input.my-adress--checkbox-list-check(type="checkbox")
+                .my-adress--checkbox-list-field
+                span.my-adress--checkbox-list-text г. Пенза, ул. Московская, д.15, подъезд 1, кв. 12
+                span.my-adress--checkbox-list-delete
+                    +icon('delete')
+            li.my-adress--checkbox-item
+                input.my-adress--checkbox-list-check(type="checkbox")
+                .my-adress--checkbox-list-field
+                span.my-adress--checkbox-list-text г. Пенза, ул. Московская, д.15, подъезд 1, кв. 12
+                span.my-adress--checkbox-list-delete
+                    +icon('delete')
+        span.partner-login-button.my-order-info__submit.my-address-button-add Добавить адрес
+
+    .my-adress--wrap.my-address__change--save
+        p.pb-3 Добавьте несколько адресов, и в графе «Адрес доставки» при оформлении заказа у вас будет возможность выбора из уже сохраненных адресов в личном кабинете
+        form
+            .partner-register-person-data--info
+                label Страна, город
+                input(type="text")
+            .partner-register-person-data--info
+                label Улица, дом, квартира
+                input(type="text")
+            .my-adress-change-new-address
+                .my-adress-change-new-address-info2
+                    input#my-adress-change-agree(type="checkbox")
+                    label(for="my-adress-change-agree") Частный дом
+                .my-adress-change-new-address-info
+                    label Подъезд
+                    input(type="text")
+                .my-adress-change-new-address-info
+                    label Этаж
+                    input(type="text")
+        .my-address__buttons
+            span.partner-login-button.my-order-info__submit.my-address-save-changes.my-address-bg-tr Назад
+            span.partner-login-button.my-order-info__submit.my-address-save-changes Сохранить изменения
+

@@ -1,0 +1,240 @@
+.droplist-and-menu
+  display flex
+  justify-content space-between
+  width 100%
+.droplist-on-head
+  width 250px
+  font-family "Circe Regular", sans-serif
+  position relative
+.menu-head--wrapper
+  display block
+  width 77.2%
+  padding-left 30px
+
+.droplist-on-head-absolute
+  absolute($top:0,$bottom:0,$right:0,$left:0)
+  z-index 100
+
+// ============================  Сортировка товаров в каталоге ==================================//
+.sort-product-sort
+  display flex
+  justify-content space-between
+
+.sort-product--alphabet
+  display flex
+  justify-content: center;
+  align-items: center;
+.sort-product--alphabet span
+  margin-right 10px
+
+.select-hidden
+  display none
+
+.select-styled
+  position relative
+  background: #BAF9B0;
+  border-radius: 24px 0px;
+  padding: 7px 13px 5px;
+  display flex
+  flex-direction row-reverse
+  font-family "Circe Bold", sans-serif
+  width 175px
+  justify-content space-between
+  z-index 2
+  cursor pointer
+
+  &:before
+    font-family: "Font Awesome 5 Pro";
+    content: "\f078"
+    font-weight lighter
+    margin-left: 10px;
+    font-size 12px
+    display flex
+    align-items center
+
+.select
+  position relative
+  z-index 15
+
+.select-options
+  display none
+  background: #DAFFD3;
+  border-radius: 0 0 24px 0px;
+  padding: 25px 13px 5px;
+  margin-top: -18px;
+  z-index 0
+  position absolute
+  left: 0;
+  right: 0;
+
+  li
+    margin-bottom 10px
+    cursor pointer
+
+    &:last-child
+      margin-bottom 5px
+
+.sort-product--alphabet option
+  background: #DAFFD3;
+  border-radius: 24px 0px
+
+.sort-atention
+  color #FF4141
+  padding: 40px 0px;
+  display: block;
+  span
+    color #2e2e2e
+
+.sort-product--squere
+  display flex
+
+.sort-type--list
+  padding 7px
+  border: 1px solid #BAF9B0;
+  box-sizing: border-box;
+  border-radius: 20px 0px;
+  display flex
+  flex-direction column
+  align-items center
+  justify-content center
+  cursor pointer
+  margin-right 16px
+
+  span
+    width 20px
+    height 4px
+    border: 1px solid #BAF9B0;
+    border-radius 10px
+    background-color transparent
+    margin-bottom 3px
+
+    &:last-child
+      margin-bottom 0
+
+
+.sort-type--nine__squere
+  padding 7px
+  border: 1px solid #BAF9B0;
+
+  box-sizing: border-box;
+  border-radius: 20px 0px;
+  display flex
+  flex-direction column
+  align-items center
+  justify-content center
+  cursor pointer
+
+  .icon
+    size(20px)
+    fill #fff
+    margin-bottom 2px
+    stroke #BAF9B0
+    stroke-width 1
+
+    &:last-child
+      margin-bottom 0
+
+
+
+.best-product-wrap--list .best-product--item
+  flex-basis: calc(100% - 0.8rem);
+  flex-direction: inherit;
+  justify-content space-between
+
+.best-product--item
+  transition linear .2s
+
+.best-product-wrap--list .shop-attr
+  display none
+
+.best-product-wrap--list .best-product--info
+  display none
+
+.best-product--info--type-list__wrapper
+  display none
+  width 66.5%
+
+.best-product-wrap--list .best-product--info--type-list__wrapper
+  display block
+
+.best-product--info--type-list__wrap
+  display flex
+  width: 100%;
+
+.best-product--info--type-list
+  width 50%
+  padding: 20px 20px 15px 20px;
+
+
+.best-product--info__type--list__link
+  display block
+  margin: 0px 0 15px;
+  font-family "Circe Bold",sans-serif
+
+.best-product--type--list-list
+  font-size 14px
+
+.best-product--type--list-item
+  display flex
+  justify-content space-between
+  margin-bottom  10px
+
+  &:last-child
+    margin-bottom  0
+.best-product--type--list-item-name
+  width 100%
+  font-family "Circe Light",sans-serif
+
+.best-product--type--list-item-status
+  text-align right
+  display: flex;
+  align-items: flex-end;
+
+.best-product--cart--compare-favourite
+  display flex
+  justify-content space-between
+  align-items center
+  font-size 14px
+  font-family "Circe Light",sans-serif
+
+  span
+    margin-left 3px
+    cursor pointer
+
+.best-product--cart--quantity
+  display flex
+  justify-content space-between
+  align-items center
+
+  span
+    font-size 14px
+    font-family "Circe Light",sans-serif
+
+.best-item-margin
+  margin-bottom  33px
+
+.best-product--cart--price
+  display flex
+  justify-content space-between
+  align-items center
+
+.best-product--cart--price .best-product--cart--price---item
+  font-size 14px
+  font-family "Circe Light",sans-serif
+
+.sort-type--list.active
+  background-color #BAF9B0
+
+  span
+    border 1px solid #fff
+    background-color #fff
+
+.sort-type--nine__squere.active
+  background-color #BAF9B0
+
+  .icon
+    fill #fff
+    stroke: #fff;
+    stroke-width: 1;
+
+// ============================  Сортировка товаров в каталоге ==================================//

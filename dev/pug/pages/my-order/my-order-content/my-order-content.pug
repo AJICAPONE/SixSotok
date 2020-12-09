@@ -1,0 +1,32 @@
+section.my-profile
+    .my-profile-wrap
+        .row
+
+            .col-xl-3
+                h2.section-title Личный кабинет
+                ul.my-profile-list
+                    li.my-profile-item.active(profile-tab="tab-my-order") Мои заказы
+                    li.my-profile-item(profile-tab="tab-common-info") Общая информация
+                    li.my-profile-item(profile-tab="tab-adress") Мои адреса
+                    li.my-profile-item(profile-tab="tab-bonus") Бонусные баллы
+                    li.my-profile-item(profile-tab="tab-change-pass") Изменить пароль
+
+
+
+            .col-xl-6.my-order--list--item
+                .tabs-content--my-profile
+                    include my-order-case/my-order-orders
+                    include my-order-case/my-order-info
+                    include my-order-case/my-order-address
+                    include my-order-case/my-order-change-pass
+                    include my-order-case/my-order-bonus
+
+
+
+            .col-xl-3.my-profile-stock.stock-slider-none
+                .delivery-stock
+                    .sidebar-stock--item(style="background-image:url('/static/img/general/stocks/stock1.png')")
+                        span.sidebar-stock--item__text Свежая зелень — в каждый дом!
+                        a.sidebar-stock--item__link(href="/")
+                            span Подробнее
+                            +icon('more-arrow')

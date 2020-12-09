@@ -1,0 +1,105 @@
+section.product-tabs
+    .product-tabs.tabs
+        ul.tab-list
+            li.tab-list__item.active(show-tab="tab-desc")
+                span.tab-list__text Описание
+            li.tab-list__item(show-tab="tab-reviews")
+                span.tab-list__text.tab-review-count Отзывы
+                    span.tab-list__text-count (4)
+        .tabs-content
+            .product-reviews-wrap.tabs-content__item.tab-desc.active
+                .product-review__comments--wrap
+                    p Бегония элатиор, или бегония зимняя (Begonia elatior) -гибриды сложного происхождения, получившие широкое распространение в комнатном цветоводстве. Эти клубневые бегонии высотой до 50 см, имеют чуть слабые, красноватые побеги, нуждающиеся в опоре. Цветки диаметром до 5–6 см, появляются в любое время года. Характеризуются богатейшей гаммой окрасок: от белой до различных оттенков желтой, розовой, красной, оранжевой и лососевой. У многих разновидностей цветки двухцветные. Лист округлый, блестящий, шириной около 8 см.
+                    ul
+                        li.product-description--list
+                            span.product-description--list--title Тип растения:
+                            span.product-description--list--text кустарник, травянистое
+                        li.product-description--list
+                            span.product-description--list--title Рекомендуемое расположение:
+                            span.product-description--list--text южные окна, западные и/или восточные окна
+                        li.product-description--list
+                            span.product-description--list--title Отношение к свету:
+                            span.product-description--list--text теневыносливое, светолюбивое
+                        li.product-description--list
+                            span.product-description--list--title Отношение к влаге:
+                            span.product-description--list--text влаголюбивое
+                        li.product-description--list
+                            span.product-description--list--title Время цветения:
+                            span.product-description--list--text весна, лето, осень
+                        li.product-description--list
+                            span.product-description--list--title Высота:
+                            span.product-description--list--text высокое (выше 100 см), среднее (50-100 см), низкое (10-50 см), ампельное
+                        li.product-description--list
+                            span.product-description--list--title Ценность в культуре:
+                            span.product-description--list--text красивоцветущее, декоративнолиственное
+
+            .product-comments-wrap.tabs-content__item.tab-reviews
+                .product-review__comments--wrap
+                    ul.product-comments-name-author-date
+                        li.product-comments-name-author-date
+                            span.product-comments-name-author Максим А.
+                            span.product-comments-date 20.06.2019
+                            .product-comments-rate#rateYo
+                            p.product-comments-name-author_text Вкуснейшая горячая пицца, мгновенная доставка. Супер! Всё понравилось, рекомендую каждому!!)
+                            .product-com-write
+                                +icon('com')
+                                a(href="/") Коментировать
+                        li.product-comments-name-author-date
+                            span.product-comments-name-author Анна К.
+                            span.product-comments-date 29.05.2019
+                            .product-comments-rate#rateYo2
+                            p.product-comments-name-author_text Безумно вкусная пицца! Заказываем теперь только здесь. Тесто тонкое и просто тает во рту.
+                            .product-com-write
+                                +icon('com')
+                                a(href="/") Коментировать
+                        li.product-comments-name-author-date
+                            span.product-comments-name-author Андрей В.
+                            span.product-comments-date 27.05.2019
+                            .product-comments-rate#rateYo3
+                            p.product-comments-name-author_text Пицца очень вкусная, как домашняя, только приготовленно профессионалом. Особенно понравилась морская. Не пожалели креветок, мидий, сыра, кальмаров. Я большая любительница море продуктов, поэтому эта пицца по мне.
+                            .product-com-write
+                                +icon('com')
+                                a(href="/") Коментировать
+                        li.product-comments-name-author-date
+                            span.product-comments-name-author Марина К.
+                            span.product-comments-date 21.05.2019
+                            .product-comments-rate#rateYo4
+                            p.product-comments-name-author_text Безумно вкусная пицца! Заказываем теперь только здесь. Тесто тонкое и просто тает во рту.
+                            .product-com-write
+                                +icon('com')
+                                a(href="/") Коментировать
+                        .all-buttons-green.more-comments Все отзывы
+                .product-comment-area--wrap
+                    span.product-comment-area-span Оцените наш товар по пятибальной шкале или напишите отзыв, это поможет нам стать еще лучше!
+                    .product-area-rating#rateYo5
+                    .producta-area--rating--form--wrap
+                        form.producta-area--rating--form
+                            .product-area--rating--name--email
+                                label Имя
+                                    input.product-area--rating--name(type="text" name="name")
+                                label Электронная почта
+                                    input.product-area--rating--email(type="email" name="email")
+                            .product-area--rating--textarea--wrap
+                                label Отзыв
+                                    textarea.product-area--rating--textarea(name="text_review")
+                            .product-area--rating-agree--wrap
+                                input.product-area--rating-agree#agree-rating(type="checkbox")
+                                label(for="agree-rating") Я согласен с
+                                    a(href="/") условиями
+                                    span обработки персональных данных
+                            button.all-buttons-green.product-area--rating--submit(type="submit") Отправить
+
+
+            .product-baners
+                .sidebar-stock--item(style="background-image:url('/static/img/general/stocks/stock2.png')")
+                    span.sidebar-stock--item__text Гибрид подсолнечника по сниженной цене
+                    a.sidebar-stock--item__link(href="/")
+                        span Подробнее
+                        +icon('more-arrow')
+                .sidebar-stock--item(style="background-image:url('/static/img/general/stocks/stock1.png')")
+                    span.sidebar-stock--item__text Свежая зелень — в каждый дом!
+                    a.sidebar-stock--item__link(href="/")
+                        span Подробнее
+                        +icon('more-arrow')
+
+

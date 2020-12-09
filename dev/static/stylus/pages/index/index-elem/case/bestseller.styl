@@ -1,0 +1,202 @@
+// =================================  Хит продаж ===================================//
+
+.best-product--container
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+
+.best-product-wrap
+  font-size 16px
+
+.best-product--item
+  flex-shrink: 1;
+  flex-grow: 0;
+  flex-basis: calc(33% - 0.8rem);
+  flex-direction column
+  display: flex;
+  justify-content: center;
+  position: relative;
+  background-color #DAFFD3
+  border-radius 30px 0
+  margin-bottom 55px
+
+//.best-product--item:nth-last-child(-n+3)
+//  margin-bottom 30px
+
+.best-product--item__img
+  width: 100%;
+  height: auto;
+  background-color: #f2fff0;
+  border-radius: 30px 0;
+  max-height 254px
+
+.best-product--info
+  display: flex;
+  flex-direction: column;
+  padding 0px 19px
+  margin-top 20px
+
+.best-product--info .ss-button
+  margin-bottom 15px
+
+.best-product--info__link
+  font-family "Circe Bold", sans-serif
+  height 48px
+
+.best-product--item__link--wrap
+  position relative
+
+.best-product--info__in-stock
+  color #5BDF78
+  margin-bottom 8px
+  font-family "Circe Regular",sans-serif
+
+.preorder-best-product
+  color #888888
+
+
+.best-product--info__price-quantity
+  display flex
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom 15px
+
+.best-product--info__price
+  font-family "Circe Bold", sans-serif
+  font-size 24px
+  line-height: 24px;
+
+.best-product--info__quantity
+  display flex
+  font-family "Circe Regular",sans-serif
+  border-radius: 16px 0;
+  box-shadow: 3px 6px 8px rgba(91, 223, 120, 0.4);
+  background-color #5BDF78
+  padding 0
+
+.best-quantity
+  width 48px
+  height 32px
+  border-radius: 24px;
+  border:none
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.1);
+  text-align center
+
+
+.best-product--info__quantity .sub,.best-product--info__quantity .add
+  width 25px
+  background-color transparent
+  border none
+  height: 32px;
+  outline none
+
+.best-product--info__quantity .sub
+  border-radius 16px 0 0
+
+.best-product--info__quantity .add
+  border-radius 0px 0 16px
+
+.best-product--item__attr
+  position: absolute;
+  right: 12px;
+  top: -18px;
+  width: 40px;
+  display: block;
+
+.best-product--item__hit
+  background-color: #5bdf78;
+  z-index 3
+  margin-bottom -10px
+
+.best-product--item__new
+  background-color #4C85DB
+  z-index 2
+  margin-bottom -10px
+
+.best-product--item__discount
+  background-color #FF4141
+  z-index 1
+  margin-bottom -10px
+
+.product-attr-status
+  width: 40px;
+  height: 40px;
+  display: flex;
+  border-radius: 30px 0;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  color: #fff;
+  position relative
+
+
+.add-to-favourite
+
+  .icon
+    fill: #FF4141;
+    stroke-width: 0.8;
+    stroke: #FF4141;
+
+.shop--favourite:hover
+  .shop-favourite-add-to-favourite
+    clip: auto;
+    opacity: 1;
+
+
+.shop-favourite-add-to-favourite
+  position: absolute;
+  clip: rect(0 0 0 0);
+  opacity 0
+  width: max-content;
+  z-index: 2;
+  background: #FFFFFF;
+  box-shadow: 2px 6px 10px rgba(255, 88, 65, 0.2);
+  border-radius: 30px 0px;
+  padding 12px 16px
+  left: -15px;
+  bottom: 35px;
+  transition linear .2s
+  font-family "Circe Regular",sans-serif
+
+
+
+  &:before
+    content ''
+    display block
+    position absolute
+    -webkit-clip-path: polygon(50% 60%, 0 0, 100% 0);
+    clip-path: polygon(50% 60%, 0 0, 100% 0);
+    bottom: -15px;
+    background-color: #fff;
+    border-radius: 2px;
+    width: 23px;
+    height: 16px;
+
+.best-product--item__added-pic
+  display flex
+  justify-content center
+  align-items center
+  position relative
+  max-height: 254px;
+  min-height: 254px;
+  background-color: #fff;
+  border-radius: 27px 0;
+
+.best-product--item__added-for-pic
+  position absolute
+  opacity 0
+  transition linear .2s
+  padding: 18px;
+  background-color rgba(255, 255, 255, 0.6)
+  border-radius 50%
+
+  .icon
+    size(24px)
+    fill #fff
+    filter: drop-shadow(2px 3px 9px black);
+
+.best-product--item__added-pic:hover
+  .best-product--item__added-for-pic
+    opacity 1
+// =================================  Хит продаж ===================================//

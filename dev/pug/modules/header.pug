@@ -1,0 +1,45 @@
+header
+    .container
+        .ss-header-container
+            .ss-logo-block
+                a(href="/").ss-logo__link
+                    +icon('logo')
+                    +icon('logo2')
+            .ss-search
+                form.ss-search-module
+                    input.ss-search-field(type="search" placeholder="Начните вводить название")
+                    button.ss-search-submit(type="submit")
+                        +icon('search')
+            ul.ss-shop-items
+                li.ss-shop--item
+                    +icon('profile')
+                    span.ss-shop--item-login Войти
+                li.ss-shop--item
+                    +icon('location')
+                    a(href="/").ss-shop--item__city Пенза
+                li.ss-shop--item.ss-shops-phone
+                    a(href="tel:89272898589").ss-shop--item__phone 8 (927) 289-85-89
+                    a(href="/").ss-shop--item__feedback--call Обратный звонок
+        .mobile-header.col-sm-12
+            .mobile-header--wrap
+                .mobile-header-menu.static-icon-size
+                    +icon('sandwich')
+                .mobile-header-rotate.static-icon-size
+                    +icon('transform')
+                .mobile-header-logo
+                    a(href="/")
+                        +icon('logo2')
+                .mobile-header-search.static-icon-size
+                    +icon('search')
+                .mobile-header-profile.static-icon-size
+                    +icon('profil')
+    form.mobile-search-input--wrap
+        .mobile-search-input--pos
+            input.mobile-search-input(type="text" placeholder="Поиск...")
+            button.mobile-search-input--submit(type="submit")
+                +icon('search')
+
+    .call-to-all-pages
+        +icon('call-mobile')
+
+

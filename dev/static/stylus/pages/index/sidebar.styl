@@ -1,0 +1,162 @@
+// ===========================  Сайдбар ===========================//
+.sidebar
+  width 250px
+
+.wrap-sidebar--section
+  display flex
+  font-family "Circe Regular",sans-serif
+
+.catalog-main--items
+  display none
+  background-color #F2FFF0
+  border-radius: 24px 0px;
+  font-family "Circe Light",sans-serif
+  padding-top: 25px;
+  margin-top: -25px;
+
+.catalog-main--item__link--count
+  margin-left 5px
+
+.catalog-main--item--level2
+  display none
+  will-change: transform;
+  background-color: #daffd3;
+  border-radius: 24px 0px;
+.catalog-main--item--level2--active
+  display block
+.catalog-main--item--level2__title
+  background: #9BF8A4;
+  border-radius: 24px 0px;
+  padding: 12px 20px 12px;
+  font-family "Circe Regular",sans-serif
+  z-index: 2;
+  position: relative;
+  display flex
+  align-items center
+  cursor pointer
+
+  .icon
+    size(12px)
+    absolute($right:20px)
+    fill #2E2E2E
+    transform rotate(180deg)
+
+.catalog-main--item--level3__title
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 10px 20px 12px;
+
+.catalog-main--item--level3
+  position relative
+  display none
+
+
+  .icon
+    size(12px)
+    absolute($right:20px,$top:50%)
+    fill #2E2E2E
+    transform rotate(180deg)
+
+
+
+
+.catalog-main--item--level2__title--count
+  margin-left 5px
+
+.catalog-main--item--level4
+  display flex
+  flex-direction column
+  background-color: #cfeec9;
+  padding: 30px 20px 20px 35px;
+
+.catalog-main--items__links
+  margin-bottom 5px
+
+////////////////////////////////////////////////////////////////////
+.sidebar-news-int--item__title
+  font-family "Circe Bold",sans-serif
+  font-size 15px
+
+.sidebar-news-int--item
+  display flex
+  flex-direction column
+  border-bottom 4px solid #5BDF78
+  border-bottom-left-radius 4px
+  border-bottom-right-radius 4px
+  margin-bottom 15px
+
+.sidebar-news-int--item__date
+  font-size 14px
+  color #ABABAB
+
+.sidebar-news-int--item__text
+  font-size 14px
+  font-family "Circe Light", sans-serif
+  margin-top 15px
+  margin-bottom 10px
+
+.sidebar-news-int--item__link
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  text-align right
+  color #888888
+  text-decoration underline
+  margin-bottom: 15px;
+
+  &:hover
+    color #888888
+
+  .icon
+    size(12px,10px)
+    fill #888888
+    margin-left 8px
+
+.check-my-order--main
+  display: block;
+  margin-top: 70px;
+  background: #A7FF99;
+  border-radius: 30px 0px;
+  padding 30px 19px
+
+.check-my-order-title
+  display block
+  font-family "Circe Bold",sans-serif
+  color #2E2E2E
+  margin-bottom 20px
+
+.check-my-order-input
+  border-radius: 24px;
+  padding: 12px 12px 12px 20px;
+  border: none;
+  width: 100%;
+  margin-bottom: 20px;
+
+.check-my-order-input::placeholder
+  color #ABABAB
+
+.order-call
+  position: fixed;
+  right: 0;
+  top: 35%;
+  transform: rotate(180deg);
+  background: #5BDF78;
+  box-shadow: 2px 6px 10px rgba(91, 223, 120, 0.4);
+  border-radius: 30px 0px;
+  color #fff
+  padding 8px
+  text-align center
+  writing-mode: tb-rl;
+  height: 232px;
+  cursor pointer
+  font-family "Circe Regular",sans-serif
+
+.hover-rotate
+  transform rotate(0deg) !important
+
+.hover-rotate2
+  transform rotate(0deg) !important
+// ===========================  Сайдбар ===========================//

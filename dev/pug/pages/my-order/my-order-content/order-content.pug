@@ -1,0 +1,16 @@
+section.order-item-my
+    .my-profile-wrap
+        .row
+            .col-xl-3
+                h2.section-title Личный кабинет
+                ul.my-profile-list
+                    li.my-profile-item(profile-tab="tab-my-order") Мои заказы
+                    li.my-profile-item(profile-tab="tab-common-info") Общая информация
+                    li.my-profile-item(profile-tab="tab-adress") Мои адреса
+                    li.my-profile-item(profile-tab="tab-bonus") Бонусные баллы
+                    li.my-profile-item(profile-tab="tab-change-pass") Изменить пароль
+
+            .col-xl-9.my-order--list--item
+                .tabs-content--my-profile
+                    include my-order-case/order-list
+

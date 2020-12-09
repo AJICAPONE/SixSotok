@@ -1,0 +1,22 @@
+.checkout-mail--wrap
+    .checkout-mail-wrapper
+        .checkout-mail-delivery
+            span.checkout-mail-delivery-text Стоимость доставки транспортной компанией
+            span.checkout-mail-delivery-summ 500 - 5000 ₽
+        p.checkout-mail-delivery--desc Сумма ориентировочная, точная стоимость доставки рассчитывается индивидуально для каждого заказа, в зависимости от веса и габаритов товара
+        .checkout-transport-wrap
+            label Город
+            input.checkout-transport-city(type="text")
+        .checkout-transport-wrap
+            label Улица, дом, квартира
+            .checkout-city-delivery__check
+                input.checkout-city-delivery__input.error-checkout(type="text")
+                input#checkout-city-transport__check(type="checkbox")
+                label(for="checkout-city-transport__check") Частный дом
+        .checkout-city-address
+            .checkout-city-address-porch
+                label Подъезд
+                input(type="text")
+            .checkout-city-address-floor
+                label Этаж
+                input(type="text")

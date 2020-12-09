@@ -1,0 +1,33 @@
+.product-popup-by-one-click#product-popup
+    .sort-catalog-popup--wraper.col-sm-12
+        .mobile-catalog-close
+            .mobile-catalog-close--icon
+                +icon('delete')
+        .sort-catalog-popup.product-one-click-popup.col-sm-6
+            span Купить в 1 клик
+            .product-by-one-click-pic
+                .best-product--item__attr
+                    span.best-product--item__hit.product-attr-status Хит
+                    span.best-product--item__new.product-attr-status New
+                    span.best-product--item__discount.product-attr-status %
+                img.product-by-one-click-pic-img(src="/static/img/general/bestseller/best-7-7.png")
+            .product-popup-by-one-click-title--wrap
+                h3.product-popup-by-one-click-title Бегония Элатиор 11,
+                h3 1 шт
+            form.by-one-click-form
+                label Контактный телефон*
+                input.mask-field(type="text" placeholder="+7 (000) 000-00-00")
+                .checked-one-click
+                    input#one-click(type="checkbox")
+                    label(for="one-click") Я согласен с
+                        a(href="/") условиями
+                            span обработки
+                    .label-one-click персональных данных
+                ul.one-click-bye-list
+                    li.one-click-bye-item
+                        .one-click-bye-item-wrap
+                            span Бегония Элатиор 11,
+                            span 1 шт
+                        h4 590 &#8381
+                button.fixed-by-one-click.all-buttons-green(type="submit") Оплатить
+

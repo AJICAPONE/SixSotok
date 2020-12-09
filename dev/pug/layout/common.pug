@@ -1,0 +1,50 @@
+include ../mixins
+block variables
+
+doctype html
+html(lang="ru-RU")
+    head
+        meta(charset="utf-8")
+        title #{title}
+        <!--[if IE]>
+        meta(http-equiv='X-UA-Compatible', content="IE = edge")
+        <![endif]-->
+        meta(name="viewport" content="width=device-width,initial-scale=1")
+        meta(name="keywords" content="")
+
+        link(rel="stylesheet" type='text/css' href="static/css/main.css")
+        link(rel="stylesheet" type='text/css' href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css")
+        link(rel="stylesheet" href="static/css/fontawesome.css")
+        link(rel="stylesheet" href="static/css/light.css")
+        link(rel="stylesheet" href="static/css/regular.css")
+        //link(rel="stylesheet" type='text/css' href="static/css/bootstrap.css")
+        script(src="static/js/jquery-3.2.1.js")
+
+
+        <!--[if lt IE 9]>
+        script(src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js")
+        <![endif]-->
+    body(class=pageClass)
+        .wrapper
+            include ../modules/header
+            .content
+                block content
+            include ../modules/footer
+
+        script(src="static/js/libs.min.js")
+        script(src="static/js/main.js")
+        script(src="static/js/slick-init.js")
+        script(src="static/js/tether.js")
+        script(src="static/js/bootstrap.min.js")
+        script(src="static/js/all.js")
+        script(src="static/js/regular.js")
+        script(src="static/js/zoomple.js")
+        script(src="static/js/preloader-main.js")
+        //script(src="static/js/bootstrap-datepicker.min.js")
+        //script(src="static/js/bootstrap-datepicker.ru.min.js")
+        //script(src="static/js/moment-with-locales.js")
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery.hoverintent/1.9.0/jquery.hoverIntent.js")
+        //script(src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js")
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.js")
+        script(src="https://code.jquery.com/ui/1.12.1/jquery-ui.js")
+        block script

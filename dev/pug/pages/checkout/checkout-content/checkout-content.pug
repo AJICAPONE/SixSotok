@@ -1,0 +1,97 @@
+section.checkout
+    .checkout-wrap
+        h4.section-title Оформление заказа
+        form.checkout-form-wrap
+            .col-xl-7.checkout-col-wrappper
+                .checkout-form__name-and-phone
+                    .checkout-form-name
+                        label Имя
+                        input(type="text")
+                    .checkout-form-name
+                        label Телефон
+                        input.mask-field(type="text" placeholder="+7 (000) 000-00-00")
+                .checkout-check-input
+                    input#checkout_check(type="checkbox")
+                    label(for="checkout_check")
+                    span Зарегистрироваться как постоянный покупатель
+                .checkout-form-tabs
+                    ul.checkout-form-tabs--list
+                        li.checkout-form-tabs--item.active(data-checkout="checkout-city") Доставка по г. Пенза
+                        li.checkout-form-tabs--item(data-checkout="checkout-pickup") Самовывоз
+                        li.checkout-form-tabs--item(data-checkout="checkout-transport") Доставка транспортной компанией
+                        li.checkout-form-tabs--item(data-checkout="checkout-mail") Доставка почтой России
+                    .content-checkout-tabs
+                        .checkout-content-tab__all.checkout-city.active
+                            include checkout-tabs/checkout-city
+                        .checkout-content-tab__all.checkout-pickup
+                            include checkout-tabs/checkout-pickup
+                        .checkout-content-tab__all.checkout-transport
+                            include checkout-tabs/checkout-transport
+                        .checkout-content-tab__all.checkout-mail
+                            include checkout-tabs/checkout-mail
+                .checkout-comment-form
+                    label Комментарий к заказу
+                    textarea(rows="2" maxlength="3000")
+                .checkout-time-delivery
+                    .checkout-time-fast
+                        span.checkout-time-fast-bold Ориентировочное время доставки
+                        input#checkoutfast(type="checkbox")
+                        label(for="checkoutfast") Как можно раньше
+                    input.mask-field-date(type="text" placeholder="22.09.2019")
+                .checkout-time-delivery
+                    span.checkout-time-fast-bold Способ оплаты
+                    .checkout-way-pay
+                        input.checkout-way-pay-input(type="radio" name="checkout_pay_way")
+                        .checkout-way-pay-check.checked
+                        span.checkout-way-pay-check-span Наличными курьеру
+                    .checkout-way-pay2
+                        span.checkout-way-pay-check-span.checkout-way-pay-lease Сдача с
+                        input.checkout-way-pay-lease--input(type="text")
+                    .checkout-way-pay
+                        input.checkout-way-pay-input(type="radio" name="checkout_pay_way")
+                        .checkout-way-pay-check
+                        span.checkout-way-pay-check-span Картой курьеру
+                    .checkout-way-pay
+                        input.checkout-way-pay-input(type="radio" name="checkout_pay_way")
+                        .checkout-way-pay-check
+                        span.checkout-way-pay-check-span Картой онлайн
+                .checkout-summ-to-pay
+                    span.checkout-summ-pay-name Сумма к оплате
+                    span.checkout-summ-pay-border
+                    span.checkout-summ-pay-summ 630 ₽
+                .checkout-summ-to-pay2
+                    span.checkout-summ-pay-name.checkout--namebold Итого к оплате
+                    span.checkout-summ-pay-border
+                    span.checkout-summ-pay-summ.checkout-bold 630 ₽
+                p.checkout-manager-text Если вы хотите совершить оплату по счету, то используйте кнопку «Отправить заявку на счет», с Вами свяжется менеджер для уточнения параметров оплаты и доставки, после чего Вам на почту будет отправлен счет на товар.
+                .checkout-check-input
+                    input#checkout_manager(type="checkbox")
+                    label(for="checkout_manager")
+                    span.checkout-uslovia-span Я ознакомился с
+                        a.checkout-uslovia(href="/") условиями использования
+                        span предоставляемых мной сведений и выражаю согласие на обработку моих персональных данных.
+                .checkout_buttons
+                    button.partner-login-button.checkout-send__pay(type="submit") Отправить заявку на счет
+                    button.partner-login-button.checkout-pay__now(type="submit") Оплатить сейчас
+
+
+
+
+            .col-xl-5.checkout-col-wrappper
+                .checkout-order-summ
+                    ul.checkout-order-cost
+                        li.checkout-order-cost-item
+                            span Стоимость заказа
+                            span 720 ₽
+                        li.checkout-order-cost-item
+                            span Скидка
+                            span - 90 ₽
+                        li.checkout-order-cost-item
+                            span Стоимость доставки
+                            span 200 ₽
+                        li.checkout-order-cost-item-fin
+                            span.checkout-order-cost-item-fin-text Итого
+                            span.checkout-order-cost-item-fin-summ 200 ₽
+
+
+

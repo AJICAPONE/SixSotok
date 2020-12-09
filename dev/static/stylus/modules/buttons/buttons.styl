@@ -1,0 +1,102 @@
+// Главная кнопка каталога //
+.catalog-main
+  background: #5bdf78;
+  border-radius: 24px 0px;
+  padding: 12px 0px;
+  font-size: 16px;
+  color: #fff;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor pointer
+  z-index: 3;
+
+  .icon
+    size(12px)
+    absolute($right:20px)
+    fill #fff
+    transform rotate(180deg)
+// Главная кнопка каталога //
+
+// Кнопка ПОДкаталога //
+.catalog-main--item
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor pointer
+  padding: 12px 35px 12px 20px;
+  font-size: 16px;
+  .icon
+    size(12px)
+    absolute($right:20px)
+    fill #2E2E2E
+    transform rotate(180deg)
+// Кнопка ПОДкаталога //
+
+// Кнопка Добавить в корзину Хиты продаж //
+.ss-button
+  display block
+  padding 12px 0
+  background: #FFFFFF;
+  box-shadow: 3px 6px 8px rgba(91, 223, 120, 0.4);
+  border-radius: 30px 0px;
+  text-align center
+  color: #FF4141;
+  font-family "Circe Bold",sans-serif
+  transition linear .2s
+
+  &:hover
+    background: #FF4141;
+    box-shadow: 3px 6px 8px rgba(255, 65, 65, 0.4);
+    color #fff
+
+  &:active
+    box-shadow: inset 2px 6px 10px rgba(196, 24, 24, 0.5);
+
+.added-to-basket
+  background: #28793A;
+  box-shadow: 3px 6px 8px rgba(91, 223, 120, 0.4);
+  color #fff
+
+  &:hover
+    background: #28793A;
+    box-shadow: 3px 6px 8px rgba(91, 223, 120, 0.4);
+    color #fff
+// Кнопка Добавить в корзину Хиты продаж //
+
+
+// Кнопка показать все хиты продаж //
+.best-button-show-more
+  padding: 12px;
+  background: #5bdf78;
+  box-shadow: 3px 6px 8px rgba(91,223,120,0.4);
+  border-radius: 30px 0px;
+  text-align: center;
+  width: 219px;
+  display: block;
+  margin: 0 auto;
+  color: #fff;
+// Кнопка показать все хиты продаж //
+
+// Все зеленые кнопки //
+.all-buttons-green
+  width 100%
+  padding 12px
+  color #fff
+  background: #5BDF78;
+  box-shadow: 2px 6px 10px rgba(91, 223, 120, 0.4);
+  border-radius: 30px 0px;
+  border none
+  text-align center
+  transition linear .2s
+  font-family "Circe Regular",sans-serif
+
+  &:hover
+    background-color #ff4141
+    box-shadow: 3px 6px 8px rgba(255,65,65,0.4);
+
+  &:active
+      background-color #ff4141
+      box-shadow: inset 2px 6px 10px rgba(196,24,24,0.5);

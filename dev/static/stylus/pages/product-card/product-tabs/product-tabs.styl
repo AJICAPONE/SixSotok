@@ -1,0 +1,226 @@
+// ==================================  Табы на карточке товара ====================================//
+.tab-list
+  display flex
+  background-color #fff
+  border: 1px solid #BAF9B0;
+  border-radius: 24px 0px;
+  width max-content
+  font-family "Circe Light",sans-serif
+  color: #2E2E2E
+
+
+.tab-list__item
+  display flex
+  justify-content center
+  align-items center
+  padding 12px
+  min-width 115px
+  cursor pointer
+  border-radius: 24px 0px;
+
+.tab-list__item.active
+    background-color #BAF9B0
+
+.tab-list__text
+  display flex
+.tab-list__text-count
+  margin-left 5px
+
+.tabs-content__item
+  display none
+.product-review__comments--wrap
+  background: #EBFCE8;
+  border-radius: 0px 0px 30px 0px;
+  padding 25px 30px
+  width 100%
+  height: max-content;
+
+  p
+    font-family "Circe Light",sans-serif
+    padding-bottom 30px
+
+.tabs-content__item.active
+  display block
+
+.product-description--list
+  padding-bottom 20px
+
+.product-description--list--title
+  font-family "Circe Bold",sans-serif
+
+.product-description--list--text
+  font-family "Circe Light",sans-serif
+  margin-left 5px
+
+.tabs-content
+  display flex
+
+.product-baners
+  margin-left  25px
+  width 270px
+  display flex
+  flex-direction: column;
+  flex-flow: wrap;
+
+  .sidebar-stock--item
+    width max-content
+    max-height 466px
+  .sidebar-stock--item__text
+    font-size 70px
+
+.product-comments-name-author
+  font-size 24px
+  font-family "Circe Regular",sans-serif
+  margin-right 10px
+.product-comments-date
+  font-size 11px
+  color #696969
+  font-family "Circe Regular",sans-serif
+
+.product-comments-rate
+  padding-top: 10px;
+
+.product-comments-rate .jq-ry-group svg
+  margin-right 10px
+
+  &:last-child
+    margin-right 0
+
+.product-comments-rate .jq-ry-normal-group svg
+  fill #F9C8C8
+
+.product-comments-rate
+  width max-content !important
+
+.product-comments-name-author_text
+  font-family "Circe Light",sans-serif
+  padding-bottom 0
+  padding-top 15px
+
+.product-comment-area--wrap
+  background: #ebfce8;
+  border-radius: 30px 0
+  padding: 25px 30px;
+  width: 100%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  margin-top: 35px;
+
+.product-area-rating .jq-ry-normal-group svg
+  margin-right 10px
+  fill transparent
+  stroke #FF4141
+  stroke-width 1px
+
+  &:last-child
+    margin-right 0
+
+.product-area-rating .jq-ry-rated-group svg
+  margin-right 10px
+
+  &:last-child
+    margin-right 0
+
+.product-area-rating
+  width max-content !important
+  padding-bottom 30px
+
+.product-comment-area-span
+  font-family "Circe Bold", sans-serif
+  font-size 20px
+  display block
+  padding-bottom 25px
+
+.product-area--rating--name--email
+  display flex
+  justify-content space-between
+  width 100%
+
+  label
+    display flex
+    flex-direction column
+    width 48%
+    font-family "Circe Regular",sans-serif
+
+    input
+      padding 12px
+      box-shadow: inset 1px 2px 10px rgba(46, 46, 46, 0.2);
+      border-radius: 24px;
+      border none
+      color #2E2E2E
+      font-size 14px
+      font-family "Circe Light",sans-serif
+      margin-top 5px
+
+.product-area--rating--textarea--wrap
+  display flex
+
+  label
+    display flex
+    flex-direction column
+    width 100%
+    font-family "Circe Regular",sans-serif
+
+    textarea
+      margin-top 5px
+      padding 12px
+      box-shadow: inset 1px 2px 10px rgba(46, 46, 46, 0.2);
+      border-radius: 24px;
+      border none
+      color #2E2E2E
+      min-height 160px
+      font-size 14px
+      font-family "Circe Light",sans-serif
+
+.product-area--rating-agree--wrap
+  padding-top 15px
+  padding-bottom 25px
+  display flex
+.product-area--rating-agree--wrap a
+  margin 0 5px
+  border-bottom 1px solid #888888
+  line-height 0.8
+  color #888888
+
+
+.product-area--rating-agree
+  display none
+
+.product-area--rating-agree + label
+  position: relative;
+  cursor: pointer;
+  padding: 0;
+  margin-bottom: 0;
+  color #888888
+
+.product-area--rating-agree + label:before
+  content: '';
+  margin-right: 10px;
+  display: flex;
+  width: 26px;
+  height: 25px;
+  box-shadow: inset 1px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  background-color #fff
+
+.product-area--rating-agree:checked + label:after
+  content: '';
+  position: absolute;
+  left: 9px;
+  top: 13px;
+  background: #5bdf78;
+  width: 2px;
+  height: 2px;
+  box-shadow: -4px 0px 0 #5bdf78, 2px 0px 0 #5bdf78, -2px 0px 0 #5bdf78, 4px 0 0 #5bdf78, 4px -2px 0 #5bdf78, 4px -4px 0 #5bdf78, 4px -6px 0 #5bdf78, 4px -8px 0 #5bdf78, 4px -10px 0 #5bdf78,4px -12px 0 #5bdf78
+  transform: rotate(45deg);
+
+.product-area--rating-agree--wrap label
+  display flex
+  align-items: center;
+  justify-content: center;
+  font-family "Circe Light",sans-serif
+
+.product-area--rating--submit
+  max-width 220px
+  font-family "Circe Regular",sans-serif

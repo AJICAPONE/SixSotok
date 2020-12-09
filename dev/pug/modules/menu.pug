@@ -1,0 +1,167 @@
+nav.nav--main
+    .slider-and-nav__menu
+        ul.nav__menu
+            .catalog-menu-wrap
+                .mobile-sandwich
+                    +icon('sandwich')
+            li.nav__menu--item
+                a.nav__menu--item--link(href="/") Доставка
+            li.nav__menu--item
+                a.nav__menu--item--link(href="/") Оплата
+            li.nav__menu--item
+                a.nav__menu--item--link(href="/") Как заказать
+            li.nav__menu--item
+                a.nav__menu--item--link(href="/") Акции
+            li.nav__menu--item
+                a.nav__menu--item--link(href="/") Контакты
+            li.nav__menu--item
+                span.nav__menu--item--link.nav__menu--item__more Еще
+                    +icon('arrow-catalog').catalog-iconz
+                    ul.nav__menu--item__more--list
+                        li.nav__menu--item__more--item
+                            a.nav__menu--item__more--link(href="/") О компании
+                        li.nav__menu--item__more--item
+                            a.nav__menu--item__more--link(href="/") Бонусная система
+                        li.nav__menu--item__more--item
+                            a.nav__menu--item__more--link(href="/") Новости
+                        li.nav__menu--item__more--item
+                            a.nav__menu--item__more--link(href="/") Блог
+                        li.nav__menu--item__more--item.nav_dop-link.nav_dop-show1
+                            a.nav__menu--item__more--link(href="/") Контакты
+                        li.nav__menu--item__more--item.nav_dop-link.nav_dop-show2
+                            a.nav__menu--item__more--link(href="/") Акции
+                        li.nav__menu--item__more--item.nav_dop-link.nav_dop-show3
+                            a.nav__menu--item__more--link(href="/") Как заказать
+                        li.nav__menu--item__more--item.nav_dop-link.nav_dop-show4
+                            a.nav__menu--item__more--link(href="/") Оплата
+
+
+        .shop-attr-and--basket-attr
+            .shop-attr
+                a(href="/").shop--compare
+                    +icon('compare')
+                a(href="/").shop--favourite
+                    +icon('star')
+
+            .basket-attr
+                a(href="/").basket-att
+                    +icon('basket')
+                    table.basket-items
+                        tbody
+                            tr
+                                td.backet--item Товаров:
+                                td.backet--count 14
+                            tr
+                                td.backet--item Итого:
+                                td.backet--count 2345 &#8381
+                .invisible-wall
+                .popup-basket-wrap
+                    .popup-basket-items
+                        ul.popup-basket--item--list
+                            li.popup-basket--item
+                                a.popup-basket--item__link(href="/") Горшок Дама (08*08) 0,28 л белый подставкой
+                            li.best-product--info__quantity
+                                button.sub(type="button") -
+                                input.best-quantity(value="1" min="1")
+                                button.add(type="button") +
+                            li.popup-basket-price--item 199 500 &#8381
+                            li.popup-basket-delete--item
+                                +icon('delete')
+                        ul.popup-basket--item--list
+                            li.popup-basket--item
+                                a.popup-basket--item__link(href="/") Горшок Дама (08*08) 0,28 л белый подставкой
+                            li.best-product--info__quantity
+                                button.sub(type="button") -
+                                input.best-quantity(value="1" min="1")
+                                button.add(type="button") +
+                            li.popup-basket-price--item 199 500 &#8381
+                            li.popup-basket-delete--item
+                                +icon('delete')
+                        ul.popup-basket--item--list
+                            li.popup-basket--item
+                                a.popup-basket--item__link(href="/") Горшок Дама (08*08) 0,28 л белый подставкой
+                            li.best-product--info__quantity
+                                button.sub(type="button") -
+                                input.best-quantity(value="1" min="1")
+                                button.add(type="button") +
+                            li.popup-basket-price--item 199 500 &#8381
+                            li.popup-basket-delete--item
+                                +icon('delete')
+                    .popup-basket--summ--wrap
+                        .popup-basket-summ
+                            span.popup-basket--summ-text Сумма заказа
+                            span.popup-basket--summ-count 2500 &#8381
+                        .popup-basket-summ-buttons
+                            a.all-buttons-green.popup-basket-summ-add-to-cart(href="/") В корзину
+                            a.all-buttons-green.popup-basket-summ-checkout(href="/") Оформить заказ
+
+.mobile-sandwich-catalog
+    .mobile-catalog-close
+        .mobile-catalog-close--icon
+            +icon('delete')
+    ul.mobile-catalog--list
+        h4 Каталог
+        li.mobile-catalog--item
+            a.mobile-catalog--link(href="/") Горшечные растения
+        li.mobile-catalog--item
+            a.mobile-catalog--link(href="/") Грунты
+        li.mobile-catalog--item
+            a.mobile-catalog--link(href="/") Зоотовары
+        li.mobile-catalog--item
+            a.mobile-catalog--link(href="/") Книжная продукция
+        li.mobile-catalog--item
+            a.mobile-catalog--link(href="/") Новогодние товары
+        li.mobile-catalog--item
+            a.mobile-catalog--link(href="/") Посадочный материал. Овощи
+        li.mobile-catalog--item
+            a.mobile-catalog--link(href="/") Посадочный материал. Цветы
+        li.mobile-catalog--item
+            a.mobile-catalog--link(href="/") Проращиватели
+        li.mobile-catalog--item
+            a.mobile-catalog--link(href="/") Рассада
+        li.mobile-catalog--item
+            a.mobile-catalog--link(href="/") Садовый декор
+        li.mobile-catalog--item
+            a.mobile-catalog--link(href="/") Садовый инвентарь
+        li.mobile-catalog--item
+            a.mobile-catalog--link(href="/") Саженцы
+        li.mobile-catalog--item
+            a.mobile-catalog--link(href="/") Семена
+        li.mobile-catalog--item
+            a.mobile-catalog--link(href="/") Средства защиты
+        li.mobile-catalog--item
+            a.mobile-catalog--link(href="/") Тара для рассады
+        li.mobile-catalog--item
+            a.mobile-catalog--link(href="/") Удобрения
+        li.mobile-catalog--item
+            a.mobile-catalog--link(href="/") Хозяйственные товары
+
+.mobile-sandwich-menu
+    .mobile-catalog-close
+        .mobile-catalog-close--icon
+            +icon('delete')
+    ul.mobile-catalog--list
+        h4 Меню
+        li.mobile-catalog--item
+            a.mobile-catalog--link(href="/") Доставка
+        li.mobile-catalog--item
+            a.mobile-catalog--link(href="/") Оплата
+        li.mobile-catalog--item
+            a.mobile-catalog--link(href="/") Как заказать
+        li.mobile-catalog--item
+            a.mobile-catalog--link(href="/") Акции
+        li.mobile-catalog--item
+            a.mobile-catalog--link(href="/") Контакты
+        li.mobile-catalog--item
+            a.mobile-catalog--link(href="/") О компании
+        li.mobile-catalog--item
+            a.mobile-catalog--link(href="/") Бонусная система
+        li.mobile-catalog--item
+            a.mobile-catalog--link(href="/") Новости
+        li.mobile-catalog--item
+            a.mobile-catalog--link(href="/") Блог
+
+
+
+
+

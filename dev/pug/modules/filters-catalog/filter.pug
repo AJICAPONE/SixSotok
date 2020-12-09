@@ -1,0 +1,85 @@
+.filter-catalog
+    span.section-title--filter Фильтры
+    .filter-catalog--wrap
+        ul.filter-wrap--all__items
+            li.filter-wrap__item
+                .filter--price Цена
+                    +icon('arrow-catalog')
+                .filter-price--wrap
+                    .filter--price--inputs
+                        input#hidden1.sliders-filters(name='1', type='text', data-index="0" value='1200')
+                        input#hidden2.sliders-filters(name='2', type='text', data-index="1" value='7800')
+                    .filter--price-js#filter-slider
+                    .max-and-min--values
+                        span.min-values
+                        span.max-values
+            li.filter-wrap__item
+                .filter--price Тип
+                    +icon('arrow-catalog')
+                .filter-price--wrap
+                    ul.filter-type__list
+                        li.filter-type__item
+                            input.filter-type__input(type="checkbox")
+                            .filter-type__input-touch
+                            .filter-type__text Цветущие
+                        li.filter-type__item
+                            input.filter-type__input(type="checkbox")
+                            .filter-type__input-touch
+                            .filter-type__text Орхидеи
+                        li.filter-type__item
+                            input.filter-type__input(type="checkbox")
+                            .filter-type__input-touch
+                            .filter-type__text Декоративно-лиственные
+                        li.filter-type__item
+                            input.filter-type__input(type="checkbox")
+                            .filter-type__input-touch
+                            .filter-type__text Большие цветы
+                        li.filter-type__item
+                            input.filter-type__input(type="checkbox")
+                            .filter-type__input-touch
+                            .filter-type__text Цитрусовые
+                        li.filter-type__item
+                            input.filter-type__input(type="checkbox")
+                            .filter-type__input-touch
+                            .filter-type__text Кактусы и суккуленты
+                        li.filter-type__item
+                            input.filter-type__input(type="checkbox")
+                            .filter-type__input-touch
+                            .filter-type__text Бонсаи
+            li.filter-wrap__item
+                .filter--price Производители
+                    +icon('arrow-catalog')
+                .filter-price--wrap
+                    ul.filter-type__list
+                        li.filter-type__item
+                            input.filter-type__input(type="checkbox")
+                            .filter-type__input-touch
+                            .filter-type__text Голландия
+                                span (62)
+                        li.filter-type__item
+                            input.filter-type__input(type="checkbox")
+                            .filter-type__input-touch
+                            .filter-type__text Голландия
+                                span (62)
+                        li.filter-type__item
+                            input.filter-type__input(type="checkbox")
+                            .filter-type__input-touch
+                            .filter-type__text Голландия
+                                span (62)
+                        li.filter-type__item
+                            input.filter-type__input(type="checkbox")
+                            .filter-type__input-touch
+                            .filter-type__text Голландия
+                                span (62)
+                        li.filter-type__item
+                            input.filter-type__input(type="checkbox")
+                            .filter-type__input-touch
+                            .filter-type__text Голландия
+                                span (62)
+                    .filter-buttons-search
+                        a.all-buttons-green.filter-apply(href="/") Применить
+                        a.all-buttons-green.green-button-filter(href="/") Сбросить
+
+
+
+

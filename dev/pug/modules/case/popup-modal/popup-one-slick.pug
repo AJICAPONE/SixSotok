@@ -1,0 +1,27 @@
+#popup-one-click.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalCenterTitle', aria-hidden='true')
+    .modal-dialog.modal-dialog-centered(role='document')
+        .modal-content
+            .modal-header
+                h5#exampleModalLongTitle.modal-title Купить в 1 клик
+                button.close(type='button', data-dismiss='modal', aria-label='Close')
+                    +icon('delete')
+            .modal-body
+                form.popup-modal-wrap#popup-check-on-click
+                    label Контактный телефон*
+                        input.popup-modal--input#phone-popup(type="text" placeholder="+7(000) 000-00-00")
+                    .popup-modal--input-agree
+                        input.popup-modal--agree#popup-aggree(type="checkbox")
+                        label(for="popup-aggree") Я согласен с
+                            a(href="/") условиями
+                            span обработки персональных данных
+
+            .modal-footer
+                ul.popup-product-one-click--wrap
+                    li.popup-product-one-click--item
+                        a(href="/")
+                            img.popup-product-one-click__img(src="static/img/general/bestseller/best-7-7.png")
+                        .popup-product-span--wrap
+                            span.popup-product-one-click--item__text Горшок Дама (08*08) 0,28л белый c подставкой
+                            span.popup-product-one-click--item__summ 130 &#8381
+                .submit-popup-form
+                    button.all-buttons-green(type="submit" form="popup-check-on-click") Оплатить

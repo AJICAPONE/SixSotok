@@ -1,0 +1,19 @@
+.my-order-info__wrap.tabs-content-items-profile.tab-common-info
+    form
+        .partner-register-person-data
+            .partner-register-person-data--info
+                label Ф. И. О.*
+                input(type="text")
+            .partner-register-person-data--info
+                label Электронная почта*
+                input(type="email")
+            .partner-register-person-data--info
+                label Контактный телефон*
+                input.mask-field(type="text" placeholder="+7 (000) 000-00-00")
+            .partner-register-person-data--info
+                label Дата рождения
+                input.mask-field-date.my-order-info-birthdate(type="text" placeholder="01.01.1970")
+            .partner-register-person-data--info-aggre
+                input.product-area--rating-agree#my-order-info__agree(type="checkbox")
+                label(for="my-order-info__agree") Подписаться на новости
+            button.partner-login-button.my-order-info__submit(type="submit") Сохранить изменения

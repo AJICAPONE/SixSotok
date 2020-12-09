@@ -1,0 +1,21 @@
+section.register-login
+    .register-login-wrap
+        .row
+            .col-xl-9
+                h2.section-title Вход в личный кабинет
+                form.register-login-form
+                    .register-login-data
+                        h5.green-register-phone--margin Мы отправили вам код на номер
+                        h5.green-register-phone +7 (900) 900-321-22-22
+                        .register-login-data--info
+                            input(type="text" placeholder="0 0 0 0 0 0")
+                        button.partner-login-button.register-login--button-green(type="submit" href="") Войти
+                        .register-forget-pass--wrap
+                            a.register-login-forget-pass.register-repeat(href="/") Повторить еще раз
+            .col-xl-3.p-3.stock-slider-none
+                .delivery-stock
+                    .sidebar-stock--item(style="background-image:url('/static/img/general/stocks/stock2.png')")
+                        span.sidebar-stock--item__text Гибрид подсолнечника по сниженной цене
+                        a.sidebar-stock--item__link(href="/")
+                            span Подробнее
+                            +icon('more-arrow')
